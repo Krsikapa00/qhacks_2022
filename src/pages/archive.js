@@ -1,11 +1,11 @@
 import React from 'react'
 
-const speaker = () => {
+const Archive = () => {
     return (
         <div>
-            <h1>Speakers</h1>
+            <h1>Archive</h1>
         </div>
     )
 }
 
-export default speaker
+export default Archive

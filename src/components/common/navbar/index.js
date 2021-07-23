@@ -1,25 +1,43 @@
 import React from 'react'
-import { NavLink, Nav, NavMenu, NavLinkImg } from './navbarElements';
-import logo from '../../assets/images/logo/LogoTricolor.png';
+import { NavLink, Nav, NavLinkMenu, Bars } from './navbarElements';
+import logo from '../../../assets/images/logo/qhacksCrown-colored.svg';
 const Navbar = () => {
     return (
         <>
-            <Nav>
-                <NavLink to="/" activeStyle>
-                    <img src={require('../../assets/images/logo/LogoTricolor.png')} alt="Logo" />
-                </NavLink>
-                {/* <Bars /> */}
-                <NavMenu>
-                    <NavLink to="/about" activeStyle>
-                        About
-                    </NavLink>
+            <Nav className="App-header">
+                <NavLinkMenu>
                     <NavLink to="/schedule" activeStyle>
                         Schedule
+                    </NavLink> 
+                    <NavLink to="/speakers" activeStyle>
+                        Speakers
                     </NavLink>
-                    <NavLink to="/contact" activeStyle>
-                        Contact
+                    <NavLink to="/sponsors" activeStyle>
+                        Sponsors
                     </NavLink>
-                </NavMenu>
+                    <NavLink to="/our-team" activeStyle>
+                        Our Team
+                    </NavLink>
+                </NavLinkMenu>
+                <NavLink to="/">
+                    <img src={logo} alt='LOGO'/>
+                </NavLink>
+                <Bars> Bar </Bars>
+                <NavLinkMenu>
+                    <NavLink to="/testimonials" activeStyle>
+                        Testimonials
+                    </NavLink>
+                    <NavLink to="/archive" activeStyle>
+                        Archive
+                    </NavLink>
+                    <NavLink to="/faq" activeStyle>
+                        FAQ
+                    </NavLink>
+                    <NavLink to="/contact-us" activeStyle>
+                        Contact Us
+                    </NavLink>
+                    
+                </NavLinkMenu>
             </Nav>
         </>
     )
