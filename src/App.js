@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
-import {Navbar} from './components/common';
+import {Header} from './components/common';
 import Home from './pages';
 import Schedule from './pages/schedule';
 import Archive from './pages/archive';
@@ -14,9 +14,9 @@ import Testimonials from './pages/testimonials';
 function App() {
   return (
     <Router>
-      <Navbar />
+      <Header />
         <Switch>
-          <Route path="/" exact component={Home}/>
+          <Route path="/home" exact component={Home}/>
           <Route path="/schedule" exact component={Schedule}/>
           <Route path="/speakers" exact component={Speakers}/>
           <Route path="/sponsors" exact component={Sponsors}/>

@@ -1,10 +1,13 @@
 import React from 'react'
-import { NavLink, Nav, NavLinkMenu, Bars } from './navbarElements';
-import logo from '../../../assets/images/logo/qhacksCrown-colored.svg';
-const Navbar = () => {
+import { NavLink, Nav, NavLinkMenu, NavLinkLogo, MobileLogoBtn } from './navbarElements';
+import logo from '../../../../assets/images/logo/qhacksCrown-colored.svg';
+const Navbar = ({toggle}) => {
     return (
         <>
-            <Nav className="App-header">
+            <Nav>
+                <MobileLogoBtn onClick={toggle}>
+                    <img src={logo} alt='LOGO' />
+                </MobileLogoBtn>
                 <NavLinkMenu>
                     <NavLink to="/schedule" activeStyle>
                         Schedule
@@ -19,10 +22,9 @@ const Navbar = () => {
                         Our Team
                     </NavLink>
                 </NavLinkMenu>
-                <NavLink to="/">
+                <NavLinkLogo to="/home">
                     <img src={logo} alt='LOGO'/>
-                </NavLink>
-                <Bars> Bar </Bars>
+                </NavLinkLogo>
                 <NavLinkMenu>
                     <NavLink to="/testimonials" activeStyle>
                         Testimonials
