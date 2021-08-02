@@ -1,0 +1,31 @@
+#StepperFrameDiv {
+    position: absolute;
+    top: 200px;
+    background-color: lightgray;
+    width: 90%;
+    height: 75%;
+
+    display: flex;
+    min-height: 61%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#StepperRowDiv {
+  display: flex;
+  flex: 1;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+#GeneralStepperCardFrame {
+    background-color: white;
+    border-radius: 2%;
+    width: 50%;
+    height: 60%;
+    position: relative;
+
+    flex: 1;
+    border: 1px solid black;
+    margin: 10px;
+}
