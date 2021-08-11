@@ -1,9 +1,11 @@
 import React from 'react'
+import ScheduleComponents from '../components/schedule'
+
 
 const Schedule = () => {
     return (
         <div>
-            <h1>Schedule</h1>
+            <ScheduleComponents></ScheduleComponents>
         </div>
     )
 }
