@@ -1,10 +1,12 @@
 import React from 'react'
-import { FooterContainer, FooterSCLink, FooterMenu, FooterPageLink, FooterLinksMenu } from './footerElements';
+import { FooterContainer, FooterSCLink, FooterMenu, FooterPageLink, FooterLinksMenu, FooterLinkLogo } from './footerElements';
 import facebook from '../../../assets/icons/socialFacebook.svg'
 import instagram from '../../../assets/icons/socialInstagram.svg'
 import linkedin from '../../../assets/icons/socialLinkedin.svg'
 import twitter from '../../../assets/icons/socialTwitter.svg'
 import mail from '../../../assets/icons/socialMail.svg'
+import logo from '../../../assets/images/logo/qhacksCrown-colored.svg';
+
 
 
 const Footer = () => {
@@ -28,10 +30,8 @@ const Footer = () => {
                             <img src={facebook} alt={'Facebook'}/>
                     </FooterSCLink>
                 </FooterMenu>
-                    <FooterLinksMenu>
-
-                    
-                    <FooterPageLink to="/" activeStyle>
+                <FooterLinksMenu>
+                    <FooterPageLink exact={true} to="/" activeStyle>
                         Home
                     </FooterPageLink>
                     <FooterPageLink to="/schedule" activeStyle>
@@ -58,7 +58,10 @@ const Footer = () => {
                     <FooterPageLink to="/contact-us" activeStyle>
                         Contact Us
                     </FooterPageLink>
-                    </FooterLinksMenu>
+                </FooterLinksMenu>
+                <FooterLinkLogo to="/">
+                    <img src={logo} alt='LOGO'/>
+                </FooterLinkLogo>
 
             </FooterContainer>
         </>

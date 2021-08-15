@@ -5,7 +5,7 @@ const MobileNavbar = ({isOpen, toggle}) => {
     return (
         <MobileNav isOpen={isOpen} onClick={toggle} >
            <MobilenavLinkMenu>
-                    <MobilenavLink to="/" activeStyle>
+                    <MobilenavLink exact={true} to="/" activeStyle>
                         Home
                     </MobilenavLink>
                     <MobilenavLink to="/schedule" activeStyle>
