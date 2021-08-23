@@ -1,6 +1,6 @@
 import React from 'react'
 
-const archive = () => {
+const Archive = () => {
     return (
         <div>
             <h1>Archive</h1>
@@ -8,4 +8,4 @@ const archive = () => {
     )
 }
 
-export default archive
+export default Archive

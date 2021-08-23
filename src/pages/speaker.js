@@ -1,6 +1,6 @@
 import React from 'react'
 
-const speaker = () => {
+const Speaker = () => {
     return (
         <div>
             <h1>Speakers</h1>
@@ -8,4 +8,4 @@ const speaker = () => {
     )
 }
 
-export default speaker
+export default Speaker
