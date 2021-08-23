@@ -5,7 +5,7 @@ import instagram from '../../../assets/icons/socialInstagram.svg'
 import linkedin from '../../../assets/icons/socialLinkedin.svg'
 import twitter from '../../../assets/icons/socialTwitter.svg'
 import mail from '../../../assets/icons/socialMail.svg'
-import logo from '../../../assets/images/logo/qhacksCrown-colored.svg';
+import logo from '../../../assets/images/logo/qhacksCrown-white.svg';
 
 
 

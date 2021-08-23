@@ -8,7 +8,7 @@ export const FooterContainer = styled.nav`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem calc((100vw - 1200px) /2);
+    /* padding: 0.5rem calc((100vw - 1200px) /2); */
     z-index: 100;
     position: absolute;
     left:0;
