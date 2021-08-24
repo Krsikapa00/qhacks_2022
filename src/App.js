@@ -15,16 +15,19 @@ function App() {
   return (
     <Router>
       <Header />
-        <Switch >
-          <Route path="/" exact component={Home}/>
-          <Route path="/schedule" exact component={Schedule}/>
-          <Route path="/speakers" exact component={Speakers}/>
-          <Route path="/sponsors" exact component={Sponsors}/>
-          <Route path="/testimonials" exact component={Testimonials}/>
-          <Route path="/archive" exact component={Archive}/>
-          <Route path="/our-team" exact component={OurTeam}/>
-          <Route path="/contact-us" exact component={ContactUs}/>
-          <Route path="/faq" exact component={Faq}/>
+        <Switch>
+          <div className="sidePadding">
+            <Route path="/" exact component={Home}/>
+            <Route path="/schedule" exact component={Schedule}/>
+            <Route path="/speakers" exact component={Speakers}/>
+            <Route path="/sponsors" exact component={Sponsors}/>
+            <Route path="/testimonials" exact component={Testimonials}/>
+            <Route path="/archive" exact component={Archive}/>
+            <Route path="/our-team" exact component={OurTeam}/>
+            <Route path="/contact-us" exact component={ContactUs}/>
+            <Route path="/faq" exact component={Faq}/>
+          </div>
+          
 
         </Switch>
         <Footer />

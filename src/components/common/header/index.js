@@ -12,10 +12,10 @@ const Header = () => {
 
 
     return (
-        <>
+        <div className="sidePadding">
             <MobileNavbar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/> 
-        </>
+        </div>
         
     )
 }

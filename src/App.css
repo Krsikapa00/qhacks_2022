@@ -14,14 +14,12 @@
   color: white;
 }
 
-
-body{
+.sidePadding {
   padding: 0.5rem calc((100vw - 1200px) /2);
-
-  
 }
+
 @media screen and (max-width: 1200px) { 
-  body{
+  .sidePadding{
     padding: 0 1rem;
   }
 }
