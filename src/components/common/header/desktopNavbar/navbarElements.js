@@ -59,12 +59,12 @@ export const NavLinkMenu = styled.div`
     background-color: #fff;
     font-variant: small-caps;
     align-items: center;
+    padding: 0 1.5rem;
     font-size: 14px;
     color: white;
     @media screen and (max-width: 850px) {
         display: none;
     }
-
 `
 
 ;

@@ -1,5 +1,5 @@
 .App {
-  margin: 0%;
+  margin: 0;
 }
 
 
@@ -14,6 +14,27 @@
   color: white;
 }
 
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  font-family: "Encode Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  height: 1vh;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -22,3 +43,4 @@
     transform: rotate(360deg);
   }
 }
+
