@@ -3,10 +3,8 @@ import styled from 'styled-components'
 export const FAQContainer = styled.div`
     display: flex;
     flex-direction: column;
-    left:0;
-    bottom:0;
-    right:0;
-    overflow-y: hidden;
+
+
 `
 export const FAQGroup = styled.div`
     display: flex;

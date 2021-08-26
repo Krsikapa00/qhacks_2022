@@ -10,14 +10,18 @@ const Header = () => {
         setIsOpen(!isOpen)
     }
 
-
-    return (
-        <div className="sidePadding">
+    if(isOpen) {
+        return(
             <MobileNavbar isOpen={isOpen} toggle={toggle}/>
-            <Navbar toggle={toggle}/> 
-        </div>
-        
-    )
+        )
+    } else {
+        return (
+            <div className="sidePadding">
+                <Navbar toggle={toggle}/> 
+            </div>
+        )
+    }
+    
 }
 
 export default Header

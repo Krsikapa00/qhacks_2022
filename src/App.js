@@ -12,12 +12,13 @@ import Sponsors from './pages/sponsors';
 import Testimonials from './pages/testimonials';
 
 function App() {
-  return (
+  return ( 
+  <div className="fullscreen">
     <Router>
       <Header />
         <Switch>
           <div className="sidePadding">
-            <Route path="/" exact component={Home}/>
+            <Route  path="/" exact component={Home}/>
             <Route path="/schedule" exact component={Schedule}/>
             <Route path="/speakers" exact component={Speakers}/>
             <Route path="/sponsors" exact component={Sponsors}/>
@@ -27,11 +28,10 @@ function App() {
             <Route path="/contact-us" exact component={ContactUs}/>
             <Route path="/faq" exact component={Faq}/>
           </div>
-          
-
         </Switch>
         <Footer />
     </ Router>
+    </div>
   );
 }
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink, Nav, NavLinkMenu, NavLinkLogo, MobileLogoBtn } from './navbarElements';
 import logo from '../../../../assets/images/logo/qhacksCrown-black.svg';
+
 const Navbar = ({toggle}) => {
     return (
         <>
