@@ -13,22 +13,17 @@ export const OsIconGroup = styled.div`
 
 export const OsImageContainer = styled.div`
     display: flex;
-   
     width: auto;
     align-items: center;
     justify-content: center;
-    /* margin: none; */
     left: 0;
     right: 0;
 `
 export const OsImage = styled.img`
     display: flex;
-   
     width: auto;
     align-items: center;
     justify-content: center;
-    /* margin: 0 0 0 0; */
-
     width: 475px;
     height: 300px;
 
@@ -75,10 +70,8 @@ export const OsContainer = styled.div`
     justify-content: center;
 
     @media screen and (max-width: 1000px) {
-        /* display: block; */
         display: flex;
         flex-direction: column;
-
     }
 `
 export const OsBucket = styled.div`

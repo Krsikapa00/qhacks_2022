@@ -13,11 +13,11 @@ import Testimonials from './pages/testimonials';
 
 function App() {
   return ( 
-  <div className="fullscreen">
+  
     <Router>
       <Header />
         <Switch>
-          <div className="sidePadding">
+          <div className="sidePadding fullscreen">
             <Route  path="/" exact component={Home}/>
             <Route path="/schedule" exact component={Schedule}/>
             <Route path="/speakers" exact component={Speakers}/>
@@ -31,7 +31,6 @@ function App() {
         </Switch>
         <Footer />
     </ Router>
-    </div>
   );
 }
 

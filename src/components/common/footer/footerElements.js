@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { NavLink as Link } from 'react-router-dom'
 import logo from '../../../assets/images/backgrounds/CircuitBoardGraphicFilledarkened.png';
 
 export const FooterContainer = styled.nav`
@@ -16,7 +15,7 @@ export const FooterContainer = styled.nav`
 `
 
 export const FooterSCLink = styled.a `
-    color: #000;
+    color: #fff;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -28,7 +27,7 @@ export const FooterSCLink = styled.a `
         padding: 0 0;
     }
 `
-export const FooterPageLink = styled(Link)`
+export const FooterPageLink = styled.a`
     color: #fff;
     padding: 5px 0;
     display: flex;
@@ -46,18 +45,37 @@ export const FooterPageLink = styled(Link)`
         text-decoration: underline;
     }
 `
-export const FooterLinkLogo = styled(Link)`
-    color: #000;
+export const FooterLinkLogo = styled.div`
+    color: #fff;
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0 2.5rem;
+    font-family: "Encode Sans sbold";
+    margin: 0.5rem 2.5rem;
     height: 100%;
-    cursor: pointer;
+    font-size: 32px;
+    opacity: 90%;
+
     
     @media screen and (max-width: 850px) {
         display: none;
     }
+`
+export const FooterHeadings = styled.div`
+    color: #bebebe;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Encode Sans sbold";
+    margin: 0.25rem 2.5rem;
+    height: 100%;
+    font-size: 11px;
+    opacity: 90%;
+
+    
+    /* @media screen and (max-width: 850px) {
+        display: none;
+    } */
 `
 export const FooterLinksMenu = styled.div `
     align-items: center;
@@ -70,9 +88,7 @@ export const FooterLinksMenu = styled.div `
     width: 70%;
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center; */
-    /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
-    
+        
 `
 
 export const FooterMenu = styled.div`
@@ -91,5 +107,4 @@ export const FooterMenu = styled.div`
         justify-content: space-between;
     }
 `
-
 ;
