@@ -15,6 +15,7 @@ export const ContactUsHeader = styled.h1`
     display: flex;
     font-family: Encode Sans ebold; 
     color: #00205B;
+    text-align: center;
     justify-content: center;
 `
 
@@ -31,49 +32,59 @@ export const ContactUsImage = styled.img`
     width: auto;
     align-items: center;
     justify-content: center;
-    width: 800px;
-    /* height: 300px; */
+    max-width: 700px;
+    width: 100%;
+    /* height: 100%; */
 
-    @media screen and (max-width: 1215px) {
+    /* @media screen and (max-width: 1215px) {
         width: 400px;
         height: 225px;
-    }
-    @media screen and (max-width: 1000px) {
+    } */
+    /* @media screen and (max-width: 850px) {
         padding-Top: 40px;
         width: 80%;
         height: 90%;
-    }
+    } */
     @media screen and (max-width: 700px) {
-        padding-Top: 40px;
-        width: 100%;
-        height: 100%;
+        display: none;
     }
 `
 
 
-export const ContactUsSCLink = styled.a `
-    color: #fff;
+export const ContactUsSCLogo = styled.img `
+    color: #000;
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0 3rem;
+    margin: 0 2rem 0 0;
     height: 100%;
     cursor: pointer;
+    width: 48px;
     
-    @media screen and (max-width: 850px) { 
+    /* @media screen and (max-width: 850px) { 
         padding: 0 0;
-    }
+    } */
 `
-export const ContactUsSCGroup = styled.div`
+export const ContactUsSCGroup = styled.a`
     display: flex;
     flex-direction: row;
+    margin: 1.5rem 2rem;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+
 `
 export const ContactUsSCContainer = styled.div`
     display: flex;
     flex-direction: column;
     padding: 2rem 0;
-
+    justify-content: center;
+    
 `
-export const ContactUsSCTitle = styled.div`
+export const ContactUsSCTitle = styled.h2`
     display: flex;
+    text-decoration: none;
+    font-family: Encode Sans sbold; 
+
+
 `

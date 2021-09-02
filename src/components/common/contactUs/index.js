@@ -1,11 +1,11 @@
 import React from 'react'
-import { ContactUsColumns, ContactUsContainer, ContactUsHeader, ContactUsSCGroup, ContactUsSCLink, ContactUsSCTitle, ContactUsImage, ContactUsSCContainer, ContactUsImageContainer } from './contactUsElements'
+import { ContactUsColumns, ContactUsContainer, ContactUsHeader, ContactUsSCGroup, ContactUsSCLogo, ContactUsSCTitle, ContactUsImage, ContactUsSCContainer, ContactUsImageContainer } from './contactUsElements'
 import graphic from "../../../assets/graphics/ContactUsGraphic.png"
-import facebook from '../../../assets/icons/socialFacebook.svg'
-import instagram from '../../../assets/icons/socialInstagram.svg'
-import linkedin from '../../../assets/icons/socialLinkedin.svg'
-import twitter from '../../../assets/icons/socialTwitter.svg'
-import mail from '../../../assets/icons/socialMail.svg'
+import facebook from '../../../assets/icons/socialFacebookdark.svg'
+import instagram from '../../../assets/icons/socialInstagramdark.svg'
+import linkedin from '../../../assets/icons/socialLinkedindark.svg'
+import twitter from '../../../assets/icons/socialTwitterdark.svg'
+import mail from '../../../assets/icons/socialMaildark.svg'
 const ContactUsCard = () => {
     return (
         <ContactUsContainer>
@@ -16,27 +16,25 @@ const ContactUsCard = () => {
                 </ContactUsImageContainer>
                 <ContactUsSCContainer>
                     <ContactUsHeader>Message us at...</ContactUsHeader>
-                    <ContactUsSCGroup>
-                        <ContactUsSCLink>
-                            <img src={instagram} alt={'Instgram'}/>
-                        </ContactUsSCLink>
+                    <ContactUsSCGroup href="https://www.instagram.com/qhacks21/">
+                            <ContactUsSCLogo src={instagram} alt={'Instgram'}/>
                         <ContactUsSCTitle>@QHacks22</ContactUsSCTitle>
                     </ContactUsSCGroup>
-                    <ContactUsSCGroup>
-                        <ContactUsSCLink></ContactUsSCLink>
-                        <ContactUsSCTitle></ContactUsSCTitle>
+                    <ContactUsSCGroup href="https://fb.com/qhacks">
+                            <ContactUsSCLogo src={facebook} alt={'Facebook'}/>
+                        <ContactUsSCTitle>@QHacks</ContactUsSCTitle>
                     </ContactUsSCGroup>
-                    <ContactUsSCGroup>
-                        <ContactUsSCLink></ContactUsSCLink>
-                        <ContactUsSCTitle></ContactUsSCTitle>
+                    <ContactUsSCGroup href="https://www.linkedin.com/company/qhacks/">
+                            <ContactUsSCLogo src={linkedin} alt={'LinkedIn'}/>
+                        <ContactUsSCTitle>QHacks</ContactUsSCTitle>
                     </ContactUsSCGroup>
-                    <ContactUsSCGroup>
-                        <ContactUsSCLink></ContactUsSCLink>
-                        <ContactUsSCTitle></ContactUsSCTitle>
+                    <ContactUsSCGroup href="https://twitter.com/QHacks21">
+                            <ContactUsSCLogo src={twitter} alt={'Twitter'}/>
+                        <ContactUsSCTitle>@QHacks22</ContactUsSCTitle>
                     </ContactUsSCGroup>
-                    <ContactUsSCGroup>
-                        <ContactUsSCLink></ContactUsSCLink>
-                        <ContactUsSCTitle></ContactUsSCTitle>
+                    <ContactUsSCGroup href="mailto:hello@qhacks.io">
+                            <ContactUsSCLogo src={mail} alt={'Mail'}/>
+                        <ContactUsSCTitle>hello@Qhacks.io</ContactUsSCTitle>
                     </ContactUsSCGroup>
                 </ContactUsSCContainer>
             </ContactUsColumns>
