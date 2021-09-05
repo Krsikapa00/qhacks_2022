@@ -61,7 +61,6 @@ export const SponsorTeraLogo = styled.img `
 
 export const SponsorGrid = styled.div`
     display: flex;
-    /* height: auto; */
     padding: 1.5rem 0;
     align-items: center;
     flex-wrap: wrap;

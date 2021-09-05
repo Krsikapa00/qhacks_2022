@@ -21,7 +21,6 @@ export const OsImageContainer = styled.div`
 `
 export const OsImage = styled.img`
     display: flex;
-    width: auto;
     align-items: center;
     justify-content: center;
     width: 475px;
