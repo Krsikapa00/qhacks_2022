@@ -5,6 +5,7 @@ import amyLu from '../assets/images/testimonialHeadshots/amyLu.png'
 import benjaminBeggs from '../assets/images/testimonialHeadshots/Benjamin_Beggs.jpg'
 import cooperLeong from '../assets/images/testimonialHeadshots/cooperLeong.png'
 import jacobLaframboise from '../assets/images/testimonialHeadshots/jacobLaframboise.jpg'
+import gregWang from '../assets/images/testimonialHeadshots/Greg_Wang.jpg'
 
 const Testimonials = () => {
     return (
@@ -31,7 +32,7 @@ const Testimonials = () => {
                 testimonial="QHacks was an exciting environment to learn and code in, and I really enjoyed the challenge. The sponsors were really cool and the event was a lot of fun!"
             />
 
-            <TestimonialCard name="Greg Wang" project="Beat Party" headshot={jacobLaframboise} bordercolor="#00205B"
+            <TestimonialCard name="Greg Wang" project="Beat Party" headshot={gregWang} bordercolor="#00205B"
                 testimonial="Qhacks was a great experience that taught me a lot about how to stay productive whilst under a time limit. I had a fun time and was proud of the project our group created in just 48 hours."
             />
         </div>
