@@ -3,11 +3,9 @@ import { TestimonialImage, TestimonialName, TestimonialImageContainer, Testimoni
 
 const TestimonialCard = (props) => {
     return (
-        <TestimonialsContainer>
+        <TestimonialsContainer >
             <TestimonialTopGroup>
-                <TestimonialImageContainer>
-                <TestimonialImage style={{"border-color": props.bordercolor}} src={props.headshot}/>
-                </TestimonialImageContainer>
+                <TestimonialImage  src={props.headshot}/>
                 <TestimonialTextGroup>
                     <TestimonialName>{props.name}</TestimonialName>
                     <TestimonialProject>Project: {props.project}</TestimonialProject>
@@ -15,7 +13,7 @@ const TestimonialCard = (props) => {
             </TestimonialTopGroup>
             <TestimonialText>{props.testimonial}</TestimonialText>
         </TestimonialsContainer>
-    )
+    )   
 }
 
 export default TestimonialCard
