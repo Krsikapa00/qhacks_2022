@@ -1,10 +1,9 @@
 import React from 'react'
+import { SponsorsList } from '../components/common'
 
 const Sponsors = () => {
     return (
-        <div>
-            <h1>Sponsors</h1>
-        </div>
+        <SponsorsList />
     )
 }
 
