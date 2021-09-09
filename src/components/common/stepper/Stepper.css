@@ -1,31 +1,36 @@
 #StepperFrameDiv {
-    position: absolute;
-    top: 200px;
-    background-color: lightgray;
-    width: 90%;
-    height: 75%;
-
-    display: flex;
-    min-height: 61%;
-    flex-direction: column;
-    justify-content: space-around;
+  margin-top: 10px;
+  background-color: rgba(200, 200, 200, 0.3);
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #StepperRowDiv {
   display: flex;
   flex: 1;
-  margin-left: 6%;
-  margin-right: 6%;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 #GeneralStepperCardFrame {
-    background-color: white;
-    border-radius: 2%;
-    width: 50%;
-    height: 60%;
-    position: relative;
+  background-color: white;
+  border-radius: 2%;
+  height: 95%;
 
-    flex: 1;
-    border: 1px solid black;
-    margin: 10px;
+  flex: 1;
+  margin: 10px;
+}
+
+.StepperArrow {
+  position: relative;
+  top: 50%;
+  font-size: 300%;
+  cursor: pointer;
+}
+
+#rightStepperArrow {
+  left: 97.5%;
+  top: -45%;
 }
