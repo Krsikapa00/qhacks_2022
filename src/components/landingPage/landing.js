@@ -8,6 +8,7 @@ import graphicMobile from "../../assets/images/backgrounds/backgroundMobile.png"
 //import waveLineRed from "../../assets/images/backgrounds/waveLineRed.png";
 import logo from "../../assets/images/logo/qhacksCrown-colored.svg";
 import word from "../../assets/images/logo/qhacksWordmark-colored.svg";
+import graphic from "../../assets/images/backgrounds/puzzlePieces.png";
 
 
 
@@ -58,16 +59,21 @@ useEffect(()=>{
     <section className="landingCSS">
       <ContentWrapper>
         <div className="div1">
-          <img src={word} className = "qhacksWord" alt="QHacks Wordmark"/>
-          <img src={logo} className = "logo" alt="QHacks Wordmark"/>
-          <h2 data-cy="qhacks-information" className = "information">
-            Queen’s University • January 22nd - 24th, 2021
-          </h2>
-          <h2 data-cy="qhacks-tagline" className = "tagline">
-            Queen’s University’s annual hackathon.
-            <br />
-            Join us for an unforgettable experience!
-          </h2>
+          <img src={graphic} className = "landingGraphic" alt="QHacks Graphic"/>
+          <div className="div2">
+            <div>
+              <img src={word} className = "qhacksWord" alt="QHacks Wordmark"/>
+              <img src={logo} className = "logo" alt="QHacks Wordmark"/>
+            </div>
+            <h2 data-cy="qhacks-information" className = "information">
+              Queen’s University • January 22nd - 24th, 2021
+            </h2>
+            <h2 data-cy="qhacks-tagline" className = "tagline">
+              Queen’s University’s annual hackathon.
+              <br />
+              Join us for an unforgettable experience!
+            </h2>
+          </div>
            {/* <ActionButton
             dataCy="apply-button"
             backgroundColor="#696969"
@@ -81,6 +87,23 @@ useEffect(()=>{
             Applications are now closed
           </ActionButton> */}
         </div>
+        <div className="div3">
+          <div>
+              <img src={word} className = "qhacksWord" alt="QHacks Wordmark"/>
+              <img src={logo} className = "logo" alt="QHacks Wordmark"/>
+            </div>
+            <h2 data-cy="qhacks-information" className = "information">
+              Queen’s University • January 22nd - 24th, 2021
+            </h2>
+            <h2 data-cy="qhacks-information" className = "information2">
+              Queen’s University <br/> January 22nd - 24th, 2021
+            </h2>
+            <h2 data-cy="qhacks-tagline" className = "tagline">
+              Queen’s University’s annual hackathon.
+              <br />
+              Join us for an unforgettable experience!
+            </h2>
+          </div>
       </ContentWrapper>
     </section>
   );

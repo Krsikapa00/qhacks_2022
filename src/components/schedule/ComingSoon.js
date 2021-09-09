@@ -5,7 +5,7 @@ export default function ComingSoon() {
     return(
         <div>
             <h1 class="title">Event Schedule 2022</h1>
-            <div class="div2">
+            <div class="imageBox">
                 <h1 class="text">Coming Soon...</h1>
             </div>
 

@@ -4,6 +4,8 @@ import Events from './Events.js'
 
 import qhacksSellingPointOnejpg from "../../assets/images/selling_points/sellingPointOne.jpg"//Temp
 import qhacksSellingPointTwojpg from "../../assets/images/selling_points/sellingPointTwo.jpg"//Temp
+import ComingSoon from './ComingSoon.js'
+import './schedule.css'
 
 
 const events = [//Temp
@@ -36,7 +38,8 @@ const Schedule = () => {
 
     return (
         <>
-            <Events events = {events}/>
+           {/* <Events events = {events}/> */}
+           <ComingSoon></ComingSoon>
         </>
         
     )
