@@ -104,6 +104,9 @@
     .information2{
         display: block;
     }
+    .div2{
+        display: none;
+    }
 } 
 
 
@@ -133,11 +136,15 @@
         padding-left: 5%;
         padding-right: 5%;
     }
+    .div2{
+        display: none;
+    }
 } 
 
 @media screen and (min-width: 820px) and (max-width: 1200px) {
     .landingCSS {
         background-size : auto 550px;
+        margin-top: 20px;
     }
     .landingGraphic {
         display: none;
@@ -153,6 +160,9 @@
     .contentWrapper{
         padding-left: 80px;
         padding-right: 80px;
+    }
+    .div2{
+        display: none;
     }
 } 
 
