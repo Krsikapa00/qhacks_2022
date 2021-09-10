@@ -26,24 +26,24 @@ export const SponsorKiloLogo = styled.img `
 `
 
 export const SponsorMegaLogo = styled.img `
-    width: 250px;
+    width: 150px;
     
     @media screen and (max-width: 980px) { 
-        width: 200px;
+        width: 100px;
     }
     @media screen and (max-width: 460px) { 
-        width: 150px;
+        width: 50px;
         margin: 30px 0;
     }
 `
 export const SponsorGigaLogo = styled.img `
-    width: 400px;
+    width: 300px;
     
     @media screen and (max-width: 980px) { 
-        width: 300px;
+        width: 250px;
     }
     @media screen and (max-width: 460px) { 
-        width: 250px;
+        width: 150px;
         margin: 30px 0;
     }
 `
@@ -65,7 +65,12 @@ export const SponsorGrid = styled.div`
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    
+    border: 3px solid #00205B;
+    color: #00205B;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 2rem;
 `
 export const SponsorContainer = styled.div`
     display: flex;
