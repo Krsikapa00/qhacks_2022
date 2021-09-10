@@ -1,11 +1,11 @@
 import React from 'react'
-import { FooterContainer, FooterSCLink, FooterMenu, FooterPageLink, FooterLinksMenu, FooterLinkLogo } from './footerElements';
+import { FooterContainer, FooterSCLink, FooterMenu, FooterPageLink, FooterLinksMenu, FooterLinkLogo, FooterHeadings } from './footerElements';
 import facebook from '../../../assets/icons/socialFacebook.svg'
 import instagram from '../../../assets/icons/socialInstagram.svg'
 import linkedin from '../../../assets/icons/socialLinkedin.svg'
 import twitter from '../../../assets/icons/socialTwitter.svg'
 import mail from '../../../assets/icons/socialMail.svg'
-import logo from '../../../assets/images/logo/qhacksCrown-colored.svg';
+import logo from '../../../assets/images/logo/qhacksCrown-white.svg';
 
 
 
@@ -13,55 +13,40 @@ const Footer = () => {
     return (
         <>
             <FooterContainer>
-                <FooterMenu>
-                    <FooterSCLink href="https://www.instagram.com/qhacks21/">
+                <FooterMenu> 
+                    <FooterSCLink href="https://www.instagram.com/qhacks21/" target="_blank" rel="noreferrer">
                             <img src={instagram} alt={'Instgram'}/>
                     </FooterSCLink>
-                    <FooterSCLink href="https://twitter.com/QHacks21">
+                    <FooterSCLink href="https://twitter.com/QHacks21" target="_blank" rel="noreferrer">
                             <img src={twitter} alt={'Twitter'}/>
                     </FooterSCLink>
-                    <FooterSCLink href="mailto:hello@qhacks.io">
+                    <FooterSCLink href="mailto:hello@qhacks.io" target="_blank" rel="noreferrer">
                             <img src={mail} alt={'Mail'}/>
                     </FooterSCLink>
-                    <FooterSCLink href="https://www.linkedin.com/company/qhacks/">
+                    <FooterSCLink href="https://www.linkedin.com/company/qhacks/" target="_blank" rel="noreferrer">
                             <img src={linkedin} alt={'Linkedin'}/>
                     </FooterSCLink>
-                    <FooterSCLink href="https://fb.com/qhacks">
+                    <FooterSCLink href="https://fb.com/qhacks" target="_blank" rel="noreferrer">
                             <img src={facebook} alt={'Facebook'}/>
                     </FooterSCLink>
                 </FooterMenu>
                 <FooterLinksMenu>
-                    <FooterPageLink exact={true} to="/" activeStyle>
-                        Home
+                    <FooterPageLink href="https://2020.qhacks.io/" target="_blank" rel="noreferrer">
+                            Qhacks 2020
                     </FooterPageLink>
-                    <FooterPageLink to="/schedule" activeStyle>
-                        Schedule
-                    </FooterPageLink> 
-                    <FooterPageLink to="/speakers" activeStyle>
-                        Speakers
+                    <FooterPageLink href="https://localhackday.mlh.io/" target="_blank" rel="noreferrer">
+                            Local Hack Day
                     </FooterPageLink>
-                    <FooterPageLink to="/sponsors" activeStyle>
-                        Sponsors
+                    <FooterPageLink href="https://medium.com/@qhacks" target="_blank" rel="noreferrer">
+                            QHacks Blog
                     </FooterPageLink>
-                    <FooterPageLink to="/our-team" activeStyle>
-                        Our Team
-                    </FooterPageLink>
-                    <FooterPageLink to="/testimonials" activeStyle>
-                        Testimonials
-                    </FooterPageLink>
-                    <FooterPageLink to="/archive" activeStyle>
-                        Archive
-                    </FooterPageLink>
-                    <FooterPageLink to="/faq" activeStyle>
-                        FAQ
-                    </FooterPageLink>
-                    <FooterPageLink to="/contact-us" activeStyle>
-                        Contact Us
+                    <FooterPageLink href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank" rel="noreferrer">
+                            MLH Code of Conduct
                     </FooterPageLink>
                 </FooterLinksMenu>
-                <FooterLinkLogo to="/">
-                    <img src={logo} alt='LOGO'/>
-                </FooterLinkLogo>
+                <FooterHeadings>Queen's University | 99 University Ave, Kingston, ON</FooterHeadings>
+                <FooterHeadings><a href="https://github.com/qhacks/qhacks-website/tree/dev-2020" target="_blank" rel="noreferrer" style={{textDecoration: "none", color: "#bebebe"}} > {"</>"} with ♡ by Queen's students</a></FooterHeadings>
+                <FooterHeadings>Copyright © 2021 QHacks</FooterHeadings>
 
             </FooterContainer>
         </>
