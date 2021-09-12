@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './Stepper.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import StepperCardGeneral from './StepperCardGeneral';
 
 export default class StepperFrame extends Component {
 
@@ -17,38 +18,22 @@ export default class StepperFrame extends Component {
 
         let row1 =
             <div id="StepperRowDiv">
-            {this.state.cards[this.state.pageNumber][0]} {this.state.cards[this.state.pageNumber][1]} {this.state.cards[this.state.pageNumber][2]}
+            {this.state.cards[this.state.pageNumber].map( 
+                (n, index) => (
+                    
+                    <StepperCardGeneral border={index} picture={n.picture} name={n.name} position={n.position} company={n.company}/>
+                )
+            )}
             </div>
     
-        let row2 =
-            <div id="StepperRowDiv">
-            {this.state.cards[this.state.pageNumber][3]} {this.state.cards[this.state.pageNumber][4]} {this.state.cards[this.state.pageNumber][5]}
-            </div>
-
-        if(this.state.cards[this.state.pageNumber].length <= 2) {
-            row1 =
-                <div id="StepperRowDiv">
-                {this.state.cards[this.state.pageNumber][0]} {this.state.cards[this.state.pageNumber][1]}
-                </div>
-            row2 = null;
-        } else if(this.state.cards[this.state.pageNumber].length <= 4) {
-            row1 =
-                <div id="StepperRowDiv">
-                {this.state.cards[this.state.pageNumber][0]} {this.state.cards[this.state.pageNumber][1]}
-                </div>
-    
-            row2 =
-                <div id="StepperRowDiv">
-                {this.state.cards[this.state.pageNumber][2]} {this.state.cards[this.state.pageNumber][3]}
-                </div>
-        }
-
+  
         return (
             //need to build a mapper to loop through the cards list and do this automatically for an unset number of cards
             <div id="StepperFrameDiv">
                 <FontAwesomeIcon icon={faChevronLeft} className="StepperArrow" id="leftStepperArrow" onClick={this.stepBack}/>
-                {row1}
-                {row2}
+                <div id="StepperCardsContainer">
+                    {row1}
+                </div>
                 <FontAwesomeIcon icon={faChevronRight} className="StepperArrow" id="rightStepperArrow" onClick={this.stepForward}/>
             </div>
         )
