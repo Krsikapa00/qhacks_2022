@@ -13,6 +13,7 @@ const SpeakerCards = [
         {picture: AhelyS,  name:"Nicholas Krsikapa", position:"Software Developer", company:Rogers},
         {picture: AhelyS,  name:"Nicholas Krsikapa", position:"Software Developer", company:Rogers},
         {picture: AhelyS,  name:"Nicholas Krsikapa", position:"Software Developer", company:Rogers},
+        {picture: AhelyS,  name:"Nicholas Krsikapa", position:"Software Developer", company:Rogers},
         {picture: AhelyS,  name:"Nicholas Krsikapa", position:"Software Developer", company:Rogers}
 
     ],

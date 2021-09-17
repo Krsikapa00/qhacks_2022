@@ -61,10 +61,23 @@
   position: relative;
   top: 50%;
   font-size: 300%;
+  transition: all .2s ease-in-out;
+}
+
+.StepperArrowActive:hover {
+  transform: scale(1.2);
+}
+
+.StepperArrowActive {
+  color: black;
   cursor: pointer;
 }
 
-#rightStepperArrow {
-  /* left: 97.5%;
-  top: -45%; */
+.StepperArrowInactive {
+  color: lightgray;
+  cursor: default;
+}
+
+.StepperArrowInactive:hover {
+  transform: scale(0.8);
 }
