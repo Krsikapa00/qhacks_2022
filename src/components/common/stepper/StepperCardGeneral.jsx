@@ -19,8 +19,9 @@ export default class StepperCardGeneral extends Component {
                 <h3 id="CardPosition">
                     {this.props.position}
                 </h3>
-                <img id="CardLogoPic" src={this.props.company} />
-            
+                <div id="CardLogoContainer">
+                    <img id="CardLogoPic" src={this.props.company} />
+                </div>
             </div>
         )
     }

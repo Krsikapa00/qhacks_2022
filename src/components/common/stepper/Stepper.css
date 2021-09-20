@@ -1,7 +1,5 @@
 #StepperFrameDiv {
-  margin-top: 10px;
-  /* background-color: rgba(200, 200, 200, 0.3); */
-  /* height: 80vh; */
+  min-height: 850px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -12,17 +10,27 @@
 
   height: 200px;
   width: 200px;
-  border: 5px solid black;
+  border: 3px solid black;
   border-radius: 50%;
   margin: 15px;
 }
 
 #CardLogoPic {
   display: flex;
-  width: 150px;
-  max-height: 50px;
-  margin: 0.5rem 0;
+  width: auto;
+  max-height: 80px;
+  max-width: 200px;
+  margin: 0.5rem 1rem;
 }
+
+#CardLogoContainer {
+  display: flex;
+  width: auto;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
 #CardName {
   color:#00205B;
 }
@@ -32,9 +40,18 @@
   font-family: "Encode Sans reg";
 }
 
+#StepperTitle {
+  display: flex;
+  font-family: Encode Sans ebold; 
+  color: #00205B;
+  text-align: center;
+  justify-content: center;
+}
+
 #StepperCardsContainer{
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 #StepperRowDiv {
@@ -61,10 +78,43 @@
   position: relative;
   top: 50%;
   font-size: 300%;
+  transition: all .2s ease-in-out;
+}
+
+.StepperArrowActive:hover {
+  transform: scale(1.2);
+}
+
+.StepperArrowActive {
+  color: black;
   cursor: pointer;
 }
 
-#rightStepperArrow {
-  /* left: 97.5%;
-  top: -45%; */
+.StepperArrowInactive {
+  color: lightgray;
+  cursor: default;
+}
+
+.StepperArrowInactive:hover {
+  transform: scale(0.8);
+}
+
+.StepperTitle {
+  color: #00205B;
+  font-size: 24px;
+  font-family: "Encode Sans bold";
+  border-bottom: 2px solid #00205B;
+  margin: 0 2rem;
+}
+
+.PageHeader {
+  color: #00205B;
+  text-align: center;
+  padding: 1rem;
+}
+
+.Container {
+  padding: 1.5rem 1rem;
+  margin: 2rem 0;
+  box-shadow: rgb(7 16 75 / 10%) 4px 7px 20px 2px;
 }

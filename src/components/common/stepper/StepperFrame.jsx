@@ -10,11 +10,20 @@ export default class StepperFrame extends Component {
         super();
         this.state = {
             pageNumber: 0,
-            cards: props.cards,
+            cards: props.cards
         }
     }
 
     render() {
+
+        let stepBackButton = <FontAwesomeIcon icon={faChevronLeft} className="StepperArrow StepperArrowActive" id="leftStepperArrow" onClick={this.stepBack}/>
+        let stepForwardButton = <FontAwesomeIcon icon={faChevronRight} className="StepperArrow StepperArrowActive" id="rightStepperArrow" onClick={this.stepForward}/>
+
+        if(this.state.pageNumber == 0)
+            stepBackButton = <FontAwesomeIcon icon={faChevronLeft} className="StepperArrow StepperArrowInactive" id="leftStepperArrow" onClick={this.stepBack}/>
+        
+        if(this.state.pageNumber == Object.keys(this.state.cards).length-1)
+            stepForwardButton = <FontAwesomeIcon icon={faChevronRight} className="StepperArrow StepperArrowInactive" id="rightStepperArrow" onClick={this.stepForward}/>
 
         let row1 =
             <div id="StepperRowDiv">
@@ -29,12 +38,16 @@ export default class StepperFrame extends Component {
   
         return (
             //need to build a mapper to loop through the cards list and do this automatically for an unset number of cards
-            <div id="StepperFrameDiv">
-                <FontAwesomeIcon icon={faChevronLeft} className="StepperArrow" id="leftStepperArrow" onClick={this.stepBack}/>
-                <div id="StepperCardsContainer">
-                    {row1}
+            
+            <div className="Container">
+                <h1 className="StepperTitle">{this.props.stepperTitle}</h1>
+                <div id="StepperFrameDiv">
+                    {stepBackButton}
+                    <div id="StepperCardsContainer">                
+                        {row1}
+                    </div>
+                    {stepForwardButton}
                 </div>
-                <FontAwesomeIcon icon={faChevronRight} className="StepperArrow" id="rightStepperArrow" onClick={this.stepForward}/>
             </div>
         )
     }
