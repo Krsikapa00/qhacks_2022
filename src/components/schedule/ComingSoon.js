@@ -8,7 +8,6 @@ export default function ComingSoon() {
             <div class="imageBox">
                 <h1 class="text">Coming Soon...</h1>
             </div>
-
             <h1 class="text2">Coming Soon...</h1>
         </div>
     ); 

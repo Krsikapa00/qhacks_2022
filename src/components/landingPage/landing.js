@@ -9,6 +9,8 @@ import graphicMobile from "../../assets/images/backgrounds/backgroundMobile.png"
 import logo from "../../assets/images/logo/qhacksCrown-colored.svg";
 import word from "../../assets/images/logo/qhacksWordmark-colored.svg";
 import graphic from "../../assets/images/backgrounds/puzzlePieces.png";
+import SignUpForm from "./signUpForm";
+import CustomForm from "./CustomForm";
 
 
 
@@ -86,6 +88,7 @@ useEffect(()=>{
           >
             Applications are now closed
           </ActionButton> */}
+          <CustomForm></CustomForm>
         </div>
         <div className="div3">
           <div>
