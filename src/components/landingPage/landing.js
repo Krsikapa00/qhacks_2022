@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, {useState, useRef, useEffect} from "react";
 //import ActionButton from "./ActionButton";
 import ContentWrapper from "./ContentWrapper";
 import "./landingPage.css";
@@ -9,8 +9,7 @@ import graphicMobile from "../../assets/images/backgrounds/backgroundMobile.png"
 import logo from "../../assets/images/logo/qhacksCrown-colored.svg";
 import word from "../../assets/images/logo/qhacksWordmark-colored.svg";
 import graphic from "../../assets/images/backgrounds/puzzlePieces.png";
-import SignUpForm from "./signUpForm";
-import CustomForm from "./CustomForm";
+import MailChimpForm from "./mailChimpForm";
 
 
 
@@ -73,8 +72,12 @@ useEffect(()=>{
             <h2 data-cy="qhacks-tagline" className = "tagline">
               Queen’s University’s annual hackathon.
               <br />
-              Join us for an unforgettable experience!
+              <br />
+              Join our mailing list to keep up to date!
             </h2>
+            <div className="formContainer">
+            <MailChimpForm></MailChimpForm>
+            </div>
           </div>
            {/* <ActionButton
             dataCy="apply-button"
@@ -88,7 +91,6 @@ useEffect(()=>{
           >
             Applications are now closed
           </ActionButton> */}
-          <CustomForm></CustomForm>
         </div>
         <div className="div3">
           <div>
@@ -104,7 +106,8 @@ useEffect(()=>{
             <h2 data-cy="qhacks-tagline" className = "tagline">
               Queen’s University’s annual hackathon.
               <br />
-              Join us for an unforgettable experience!
+              <br />
+              Join our mailing list to keep up to date!
             </h2>
           </div>
       </ContentWrapper>
