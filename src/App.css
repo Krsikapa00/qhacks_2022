@@ -14,6 +14,22 @@
   color: white;
 }
 
+.sidePadding {
+  padding: 0.5rem calc((100vw - 1200px) /2);
+}
+
+.fullscreen {
+  min-height: calc(100vh - 80px - 175px);
+}
+
+@media screen and (max-width: 1200px) { 
+  .sidePadding{
+    padding: 0 1rem;
+  }
+}
+
+
+
 html,
 body {
   height: 100%;

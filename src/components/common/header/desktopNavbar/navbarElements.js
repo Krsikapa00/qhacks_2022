@@ -6,7 +6,6 @@ export const Nav = styled.nav`
     height: 80px;
     display: flex;
     justify-content: center;
-    padding: 0.5rem calc((100vw - 1200px) /2);
     z-index: 100;
 `
 
@@ -36,8 +35,13 @@ export const NavLinkLogo = styled(Link)`
         display: none;
     }
 `
-export const MobileLogoBtn = styled.div`
+export const MobileLogoBtn = styled.button`
     display: none;
+    background: none;
+    border: none;
+    width: 0px;
+    height: 0px;
+    
     
     @media screen and (max-width: 850px) {
         color: #000;
@@ -46,6 +50,7 @@ export const MobileLogoBtn = styled.div`
         text-decoration: none;
         padding: 0 2.5rem;
         height: 100%;
+        width: auto;
         cursor: pointer;
     }
 `

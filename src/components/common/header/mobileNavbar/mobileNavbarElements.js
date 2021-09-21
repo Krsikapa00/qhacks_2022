@@ -2,17 +2,23 @@ import styled from 'styled-components'
 import { NavLink as Link } from 'react-router-dom'
 
 export const MobileNav = styled.aside`
-position: fixed;
-z-index: 1000;
-width: 100%;
-height: 100%;
-background: #fff;
-display: grid;
-align-items: center;
-top: 0;
-left:0;
-opacity: ${({ isOpen }) => (isOpen ? '100%' : '0%')};
-top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+
+display: none;
+width: 0px;
+height: 0px;
+@media screen and (max-width: 850px) {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: grid;
+    align-items: center;
+    top: 0;
+    left:0;
+    opacity: ${({ isOpen }) => (isOpen ? '100%' : '0%')};
+    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+}
 `
 
 export const MobilenavLinkMenu = styled.div`
