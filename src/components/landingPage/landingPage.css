@@ -7,39 +7,53 @@
 }
 
 
-.formContainer{
-    border: 3px solid #00205b;
-    width: fit-content;
-    border-radius: 3px;
+.mailChimpForm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 div.formContainer button {
-    background-color: #c8102e;
+    background-color: #00205B;
     color: #ffffff;
-    border: 3px solid #fff;
-    align-items: center;
+    border: none;
     position: relative;
-    padding: 13px 13px;
+    padding: 11px 11px;
     border-radius: 5px;
     font: inherit;
     font-weight: bold;
+    box-shadow: none;
+    width: 35%;
 }
 
 div.formContainer button:hover {
-    background-color: #cd5c5c;
+    background-color: #16498c;
     color: #ffffff;
 }
 
 div.formContainer input {
-    border: 3px solid #fff;
+    box-shadow:  0.5px 0.5px #7474742f;
+    border: 0.1px solid #747474;
     position: relative;
-    padding: 13px 13px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-right: 3%;
     border-radius: 5px;
     font: inherit;
     font-weight: bold;
+    width: 62%;
 }
 
-.mailChimpForm{
+div.formContainer p {
+    display: block;
+    color: #000000 !important;
+    font: inherit;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .div1 {
