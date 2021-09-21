@@ -91,7 +91,7 @@ useEffect(()=>{
           >
             Applications are now closed
           </ActionButton> */}
-        </div>
+        </div>npm
         <div className="div3">
           <div>
               <img src={word} className = "qhacksWord" alt="QHacks Wordmark"/>
