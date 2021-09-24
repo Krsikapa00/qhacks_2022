@@ -6,6 +6,7 @@ export const SponsorHeader = styled.h1`
     color: #00205B;
     text-align: center;
     justify-content: center;
+    margin-bottom: 5rem;
 `
 
 export const SponsorLink = styled.a`
@@ -26,10 +27,10 @@ export const SponsorKiloLogo = styled.img `
 `
 
 export const SponsorMegaLogo = styled.img `
-    width: 150px;
+    width: 125px;
     
     @media screen and (max-width: 980px) { 
-        width: 100px;
+        width: 80px;
     }
     @media screen and (max-width: 460px) { 
         width: 50px;
@@ -61,7 +62,7 @@ export const SponsorTeraLogo = styled.img `
 
 export const SponsorGrid = styled.div`
     display: flex;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
@@ -69,7 +70,7 @@ export const SponsorGrid = styled.div`
     color: #00205B;
     border-radius: 15px;
     text-align: center;
-    text-decoration: underline;
+    text-decoration: underline; 
     margin-bottom: 2rem;
 `
 export const SponsorContainer = styled.div`

@@ -5,6 +5,7 @@ import Videocomponent from "./videoComponent";
 import ContactUsCard from "./contactUs";
 import SponsorsList from "./sponsors";
 import TestimonialCard from "./testimonialCard"
+import TeamMemberCard from "./teamMemberCard";
 // Add each main component you create here to call it all on one line
 export {
     Footer,
@@ -13,5 +14,6 @@ export {
     TestimonialCard,
     Videocomponent,
     ValueProposition,
+    TeamMemberCard,
     Header
 }

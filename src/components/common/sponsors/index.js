@@ -33,10 +33,20 @@ const SponsorsList = () => {
         <div
             style={{
                 color: "#00205B",
-                textAlign: "center"
+                width: "100%",
+                borderRadius: "15px",
+                background: "#00205B",
+                textAlign: "center",
+                padding: "10px 0"
             }}
             >
-            <h2>Giga Sponsors</h2>
+            <h2  
+            
+            style={{
+                color: "#fff",
+                textAlign: "center"
+            }}
+            >Giga Sponsors</h2>
          </div>
         <SponsorGrid>
             <SponsorLink href="https://jobs.rogers.com/" target="_blank" rel="noreferrer">
@@ -59,7 +69,28 @@ const SponsorsList = () => {
             </SponsorLink>
         </SponsorGrid>
        
-        <SponsorGrid>
+        <div
+            style={{
+                color: "#c81c2e",
+                width: "100%",
+                borderRadius: "15px",
+                background: "#c81c2e",
+                // border: "1px solid #c81c2e",
+                textAlign: "center",
+                padding: "10px 0"
+            }}
+            >
+            <h2  
+            
+            style={{
+                color: "#fff",
+                textAlign: "center"
+            }}
+            >Mega Sponsors</h2>
+         </div>
+        <SponsorGrid style={{
+                borderColor: "#c81c2e"
+        }}>
             <SponsorLink href="https://balsamiq.com/" target="_blank" rel="noreferrer">
                 <SponsorMegaLogo src={balsamiq} alt="balsamiq" />
             </SponsorLink>
