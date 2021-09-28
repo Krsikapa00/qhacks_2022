@@ -109,6 +109,9 @@ useEffect(()=>{
               <br />
               Join our mailing list to keep up to date!
             </h2>
+            <div className="formContainer">
+            <MailChimpForm></MailChimpForm>
+            </div>
           </div>
       </ContentWrapper>
     </section>
