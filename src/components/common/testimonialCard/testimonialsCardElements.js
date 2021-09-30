@@ -27,6 +27,13 @@ export const TestimonialsContainer = styled.div `
     }
 
 `
+export const TestimonialHeader = styled.h1`
+    display: flex;
+    font-family: Encode Sans ebold; 
+    color: #00205B;
+    text-align: center;
+    justify-content: center;
+`
 
 export const TestimonialTopGroup = styled.div `
     display: flex;
@@ -80,10 +87,12 @@ export const TestimonialImage = styled.img `
     border-radius: 50%;
 `
 
-export const TestimonialName = styled.h2 `
+export const TestimonialName = styled.h3 `
     padding: 5px 0;
+    font-family: Encode Sans bold; 
 
 `
-export const TestimonialProject = styled.h3 `
+export const TestimonialProject = styled.h2 `
 
+    font-family: Encode Sans med; 
 `

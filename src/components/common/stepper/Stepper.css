@@ -110,7 +110,12 @@
 .PageHeader {
   color: #00205B;
   text-align: center;
-  padding: 1rem;
+  /* padding: 1rem; */
+  display: flex;
+  font-family: Encode Sans ebold; 
+  color: #00205B;
+  text-align: center;
+  justify-content: center;
 }
 
 .Container {

@@ -1,7 +1,12 @@
 
 .title {
   text-align: center;
-  padding-top: 50px;
+  /* padding-top: 50px; */
+  display: flex;
+  font-family: Encode Sans ebold; 
+  color: #00205B;
+  text-align: center;
+  justify-content: center;
 }
 
 .imageBox {

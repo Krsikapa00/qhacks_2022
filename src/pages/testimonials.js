@@ -6,9 +6,18 @@ import benjaminBeggs from '../assets/images/testimonialHeadshots/Benjamin_Beggs.
 import cooperLeong from '../assets/images/testimonialHeadshots/cooperLeong.png'
 import jacobLaframboise from '../assets/images/testimonialHeadshots/jacobLaframboise.jpg'
 import gregWang from '../assets/images/testimonialHeadshots/Greg_Wang.jpg'
+import { TestimonialHeader } from '../components/common/testimonialCard/testimonialsCardElements'
 
 const Testimonials = () => {
     return (
+        <div 
+            style={{
+                display: 'flex',
+                flexDirection: "column",
+                justifyContent: "center",
+            }}>
+
+        <TestimonialHeader>Our Testimonials</TestimonialHeader>
         <div 
             style={{
                 display: 'flex',
@@ -16,6 +25,7 @@ const Testimonials = () => {
                 justifyContent: "center",
             }}
             >
+                
             <TestimonialCard name="Jordan Curnew" project="Parallel Fourier Computing" headshot={jordanCurnew} bordercolor="#00205B"
                 testimonial="QHacks provided an exciting opportunity to put the skills I’ve learned in school to the test and network with industry professionals (which led to a job offer!). My team built an application for computing Fourier Transforms utilizing parallel processing on a distributed network – I never thought I’d be able to make something like that in 36 hours!"
             />
@@ -36,6 +46,8 @@ const Testimonials = () => {
                 testimonial="Qhacks was a great experience that taught me a lot about how to stay productive whilst under a time limit. I had a fun time and was proud of the project our group created in just 48 hours."
             />
         </div>
+        </div>
+    
     )
 }
 

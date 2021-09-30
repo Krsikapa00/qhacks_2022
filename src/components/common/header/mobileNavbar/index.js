@@ -23,9 +23,9 @@ const MobileNavbar = ({isOpen, toggle}) => {
                     <MobilenavLink to="/testimonials" activeStyle>
                         Testimonials
                     </MobilenavLink>
-                    <MobilenavLink to="/archive" activeStyle>
+                    {/* <MobilenavLink to="/archive" activeStyle>
                         Archive
-                    </MobilenavLink>
+                    </MobilenavLink> */}
                     <MobilenavLink to="/faq" activeStyle>
                         FAQ
                     </MobilenavLink>
