@@ -98,7 +98,7 @@ div.formContainer p {
     font-weight: 600;
     font-size: 22px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     word-break: normal;
 }
 
@@ -115,7 +115,7 @@ div.formContainer p {
 
 .tagline{
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     font-weight: 500;
     line-height: 30px;
     word-break: normal;
