@@ -72,7 +72,6 @@ useEffect(()=>{
             <h2 data-cy="qhacks-tagline" className = "tagline">
               Queen’s University’s annual hackathon.
               <br />
-              <br />
               Join our mailing list to keep up to date!
             </h2>
             <div className="formContainer">
