@@ -90,9 +90,10 @@ export const TestimonialImage = styled.img `
 export const TestimonialName = styled.h3 `
     padding: 5px 0;
     font-family: Encode Sans bold; 
+    color: #00205B;
 
 `
 export const TestimonialProject = styled.h2 `
 
-    font-family: Encode Sans med; 
+    font-family: Encode Sans reg; 
 `
