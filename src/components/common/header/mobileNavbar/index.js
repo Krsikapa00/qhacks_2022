@@ -5,9 +5,9 @@ const MobileNavbar = ({isOpen, toggle}) => {
     return (
         <MobileNav isOpen={isOpen} onClick={toggle} >
            <MobilenavLinkMenu>
-                    <MobilenavLink exact={true} to="/" activeStyle>
+                    {/* <MobilenavLink exact={true} to="/" activeStyle>
                         Home
-                    </MobilenavLink>
+                    </MobilenavLink> */}
                     <MobilenavLink to="/schedule" activeStyle>
                         Schedule
                     </MobilenavLink> 
@@ -26,9 +26,9 @@ const MobileNavbar = ({isOpen, toggle}) => {
                     {/* <MobilenavLink to="/archive" activeStyle>
                         Archive
                     </MobilenavLink> */}
-                    <MobilenavLink to="/faq" activeStyle>
+                    {/* <MobilenavLink to="/faq" activeStyle>
                         FAQ
-                    </MobilenavLink>
+                    </MobilenavLink> */}
                     <MobilenavLink to="/contact-us" activeStyle>
                         Contact Us
                     </MobilenavLink>

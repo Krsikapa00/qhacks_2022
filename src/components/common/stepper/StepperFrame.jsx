@@ -19,12 +19,17 @@ export default class StepperFrame extends Component {
         let stepBackButton = <FontAwesomeIcon icon={faChevronLeft} className="StepperArrow StepperArrowActive" id="leftStepperArrow" onClick={this.stepBack}/>
         let stepForwardButton = <FontAwesomeIcon icon={faChevronRight} className="StepperArrow StepperArrowActive" id="rightStepperArrow" onClick={this.stepForward}/>
 
-        if(this.state.pageNumber == 0)
-            stepBackButton = <FontAwesomeIcon icon={faChevronLeft} className="StepperArrow StepperArrowInactive" id="leftStepperArrow" onClick={this.stepBack}/>
+        if(this.state.pageNumber == 0 && this.state.pageNumber == Object.keys(this.state.cards).length-1) {
+            stepBackButton = null;
+            stepForwardButton = null;
+        } else {
+            if(this.state.pageNumber == 0)
+                stepBackButton = <FontAwesomeIcon icon={faChevronLeft} className="StepperArrow StepperArrowInactive" id="leftStepperArrow" onClick={this.stepBack}/>
         
-        if(this.state.pageNumber == Object.keys(this.state.cards).length-1)
-            stepForwardButton = <FontAwesomeIcon icon={faChevronRight} className="StepperArrow StepperArrowInactive" id="rightStepperArrow" onClick={this.stepForward}/>
-
+            if(this.state.pageNumber == Object.keys(this.state.cards).length-1)
+                stepForwardButton = <FontAwesomeIcon icon={faChevronRight} className="StepperArrow StepperArrowInactive" id="rightStepperArrow" onClick={this.stepForward}/>
+        }
+        
         let row1 =
             <div id="StepperRowDiv">
             {this.state.cards[this.state.pageNumber].map( 

@@ -10,9 +10,9 @@ const Navbar = ({toggle}) => {
                     <img src={logo} alt='LOGO' />
                 </MobileLogoBtn>
                 <NavLinkMenu>
-                <NavLink to="/" exact={true} >
+                {/*<NavLink to="/" exact={true} >
                         Home
-                    </NavLink> 
+                    </NavLink> */}
                     <NavLink to="/schedule" >
                         Schedule
                     </NavLink> 
@@ -38,9 +38,9 @@ const Navbar = ({toggle}) => {
                     {/* <NavLink to="/archive" >
                         Archive
                     </NavLink> */}
-                    <NavLink to="/faq" activeStyle>
+                    {/* <NavLink to="/faq" activeStyle>
                         FAQ
-                    </NavLink>
+                    </NavLink> */}
                     <NavLink to="/contact-us" activeStyle>
                         Contact Us
                     </NavLink>

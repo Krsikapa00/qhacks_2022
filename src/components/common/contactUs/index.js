@@ -6,6 +6,15 @@ import instagram from '../../../assets/icons/socialInstagramdark.svg'
 import linkedin from '../../../assets/icons/socialLinkedindark.svg'
 import twitter from '../../../assets/icons/socialTwitterdark.svg'
 import mail from '../../../assets/icons/socialMaildark.svg'
+import './contactUs.css'
+
+const changeInEmailMe = () => {
+    document.getElementById("formSubmitButton").setAttribute("disabled", true);
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if(document.getElementById("name").value.length < 1 || !re.test(document.getElementById("email").value) || document.getElementById("message").value.length < 5) return;
+    document.getElementById("formSubmitButton").removeAttribute("disabled");
+}
+
 const ContactUsCard = () => {
     return (
         <ContactUsContainer>
@@ -13,6 +22,26 @@ const ContactUsCard = () => {
             <ContactUsColumns>
                 <ContactUsImageContainer>
                     <ContactUsImage src={graphic}/>
+                    <form id="fs-frm" class="contactUsForm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xknppyyl" method="post">
+                        <div class="fields">
+                            <div class="field">
+                                <label for="name">Name</label>
+                                <input type="text" class="contactTextField" name="name" id="name" onKeyDown={changeInEmailMe} onPaste={changeInEmailMe} onInput={changeInEmailMe}/>
+                            </div>
+                            <div class="field">
+                                <label for="email">Email</label>
+                                <input type="email" class="contactTextField" name="email" id="email" onKeyDown={changeInEmailMe} onPaste={changeInEmailMe} onInput={changeInEmailMe}/>
+                            </div>
+                            <div class="field">
+                                <label for="message">Message</label>
+                                <textarea name="message" class="contactTextField" id="message" rows="4" onKeyDown="changeInEmailMe" 
+                                onPaste={changeInEmailMe} onInput={changeInEmailMe}></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <input id="formSubmitButton" type="submit" value="Send Email" disabled />
+                        </ul>
+                    </form>
                 </ContactUsImageContainer>
                 <ContactUsSCContainer>
                     <ContactUsHeader>Message us at...</ContactUsHeader>

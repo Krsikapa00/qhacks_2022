@@ -1,0 +1,31 @@
+.contactUsForm {
+    position: relative;
+    left: -80%;
+    top: -35%;
+    width: 0px;
+    height: 0px;
+
+    @media screen and (max-width: 700px) {
+        display: none !important;
+    }
+}
+
+.contactUsForm label {
+    font-size: large;
+    font-family: Encode Sans ebold; 
+    color: #00205B;
+}
+
+.contactTextField {
+    height: 30px;
+    width: 25vw;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.contactUsForm textarea{
+    height: 150px;
+}
