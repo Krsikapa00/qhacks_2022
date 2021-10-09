@@ -11,7 +11,7 @@ import './contactUs.css'
 const changeInEmailMe = () => {
     document.getElementById("formSubmitButton").setAttribute("disabled", true);
     var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if(document.getElementById("name").value.length < 1 || !re.test(document.getElementById("email").value) || document.getElementById("message").value.length < 5) return;
+    if(document.getElementById("name").value.length < 1 || !re.test(document.getElementById("email").value) || document.getElementById("message").value.length < 1) return;
     document.getElementById("formSubmitButton").removeAttribute("disabled");
 }
 
@@ -22,7 +22,7 @@ const ContactUsCard = () => {
             <ContactUsColumns>
                 <ContactUsImageContainer>
                     <ContactUsImage src={graphic}/>
-                    <form id="fs-frm" class="contactUsForm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xknppyyl" method="post">
+                    <form id="fs-frm" class="contactUsForm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/QHACKS-CODE-WILL-GO-HERE" method="post">
                         <div class="fields">
                             <div class="field">
                                 <label for="name">Name</label>

@@ -29,3 +29,23 @@
 .contactUsForm textarea{
     height: 150px;
 }
+
+.contactUsForm ul input{
+    font-size: small;
+    font-family: Encode Sans ebold;
+    width: 6.25vw;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative;
+    left: 9.375vw;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.contactUsForm ul input :enabled {
+    color: #00205B;
+}
+
+.contactUsForm ul input :disabled {
+    color: #666666;
+}
