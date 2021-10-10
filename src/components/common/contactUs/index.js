@@ -22,7 +22,7 @@ const ContactUsCard = () => {
             <ContactUsColumns>
                 <ContactUsImageContainer>
                     <ContactUsImage src={graphic}/>
-                    <form id="fs-frm" class="contactUsForm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/QHACKS-CODE-WILL-GO-HERE" method="post">
+                    <form id="fs-frm" class="contactUsForm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xwkazzge" method="post">
                         <div class="fields">
                             <div class="field">
                                 <label for="name">Name</label>
