@@ -22,18 +22,19 @@ const ContactUsCard = () => {
             <ContactUsColumns>
                 <ContactUsImageContainer>
                     <ContactUsImage src={graphic}/>
-                    <form id="fs-frm" class="contactUsForm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xwkazzge" method="post">
+                </ContactUsImageContainer>
+                <form id="fs-frm" class="contactUsForm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xwkazzge" method="post">
                         <div class="fields">
                             <div class="field">
-                                <label for="name">Name</label>
+                                <label class="fieldTitle" for="name">Name</label>
                                 <input type="text" class="contactTextField" name="name" id="name" onKeyDown={changeInEmailMe} onPaste={changeInEmailMe} onInput={changeInEmailMe}/>
                             </div>
                             <div class="field">
-                                <label for="email">Email</label>
+                                <label class="fieldTitle" for="email">Email</label>
                                 <input type="email" class="contactTextField" name="email" id="email" onKeyDown={changeInEmailMe} onPaste={changeInEmailMe} onInput={changeInEmailMe}/>
                             </div>
                             <div class="field">
-                                <label for="message">Message</label>
+                                <label class="fieldTitle" for="message">Message</label>
                                 <textarea name="message" class="contactTextField" id="message" rows="4" onKeyDown="changeInEmailMe" 
                                 onPaste={changeInEmailMe} onInput={changeInEmailMe}></textarea>
                             </div>
@@ -42,8 +43,7 @@ const ContactUsCard = () => {
                             <input id="formSubmitButton" type="submit" value="Send Email" disabled />
                         </ul>
                     </form>
-                </ContactUsImageContainer>
-                <ContactUsSCContainer>
+                {/* <ContactUsSCContainer>
                     <ContactUsHeader>Message us at...</ContactUsHeader>
                     <ContactUsSCGroup href="https://www.instagram.com/qhacks21/">
                             <ContactUsSCLogo src={instagram} alt={'Instgram'}/>
@@ -65,7 +65,7 @@ const ContactUsCard = () => {
                             <ContactUsSCLogo src={mail} alt={'Mail'}/>
                         <ContactUsSCTitle>hello@Qhacks.io</ContactUsSCTitle>
                     </ContactUsSCGroup>
-                </ContactUsSCContainer>
+                </ContactUsSCContainer> */}
             </ContactUsColumns>
         </ContactUsContainer>
     )

@@ -1,26 +1,24 @@
 .contactUsForm {
-    position: relative;
-    left: -80%;
-    top: -35%;
-    width: 0px;
-    height: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    
 
-    @media screen and (max-width: 700px) {
-        display: none !important;
-    }
 }
 
 .contactUsForm label {
     font-size: large;
     font-family: Encode Sans ebold; 
     color: #00205B;
+    width: 80px;
 }
 
 .contactTextField {
     height: 30px;
-    width: 25vw;
-    margin-top: 5px;
-    margin-bottom: 20px;
+    /* width: 100%; */
+    min-width: 360px;
+    margin-left: 5px;
     background-color: rgba(255, 255, 255, 0.3);
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 5px;
@@ -33,12 +31,10 @@
 .contactUsForm ul input{
     font-size: small;
     font-family: Encode Sans ebold;
-    width: 6.25vw;
+    padding:5px;
     height: 30px;
     border: 1px solid black;
     border-radius: 5px;
-    position: relative;
-    left: 9.375vw;
     background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -48,4 +44,43 @@
 
 .contactUsForm ul input :disabled {
     color: #666666;
+}
+
+.field {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 20px;
+
+
+}
+@media screen and (max-width: 850px) {
+
+    .contactUsForm {
+        width: 90%;    
+    }
+    .fields {
+        width: 100%; 
+    }
+    .field {
+        flex-direction: column;
+    }
+    .contactTextField {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .contactUsForm {
+        width: 90%;    
+    }
+    .fields {
+        width: 100%; 
+    }
+    .field {
+        flex-direction: column;
+    }
+    .contactTextField {
+        width: 100%;
+    }
 }

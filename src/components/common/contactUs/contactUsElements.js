@@ -9,7 +9,12 @@ export const ContactUsContainer = styled.div`
 export const ContactUsColumns = styled.div`
     display: flex;
     flex-direction: row;
-    /* fle: 2fr 1fr */
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+    }
 `
 export const ContactUsHeader = styled.h1`
     display: flex;
@@ -33,18 +38,16 @@ export const ContactUsImage = styled.img`
     align-items: center;
     justify-content: center;
     max-width: 700px;
-    width: 100%;
-    /* height: 100%; */
 
-    /* @media screen and (max-width: 1215px) {
-        width: 400px;
-        height: 225px;
-    } */
-    /* @media screen and (max-width: 850px) {
-        padding-Top: 40px;
+    @media screen and (max-width: 1215px) {
+        width: 500px;
+        height: 380px;
+    }
+    @media screen and (max-width: 850px) {
+        /* padding-Top: 40px; */
         width: 80%;
         height: 90%;
-    } */
+    } 
     @media screen and (max-width: 700px) {
         display: none;
     }
