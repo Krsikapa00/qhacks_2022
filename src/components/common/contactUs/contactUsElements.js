@@ -4,6 +4,7 @@ import styled from 'styled-components'
 export const ContactUsContainer = styled.div`
     display: flex;
     flex-direction: column;
+    margin-bottom: 90px;
 `
 
 export const ContactUsColumns = styled.div`
@@ -38,6 +39,7 @@ export const ContactUsImage = styled.img`
     align-items: center;
     justify-content: center;
     max-width: 700px;
+    height: 520px;
 
     @media screen and (max-width: 1215px) {
         width: 500px;

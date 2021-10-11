@@ -59,7 +59,6 @@ export const OsDivider = styled.div`
     flex-direction: row;
     flex: 1fr 1fr 1fr;
     padding: 10px 0 15px 0;
-  
 `
 export const OsContainer = styled.div`
     display: grid;
@@ -71,8 +70,9 @@ export const OsContainer = styled.div`
     @media screen and (max-width: 1000px) {
         display: flex;
         flex-direction: column;
-    }
+    }   
 `
 export const OsBucket = styled.div`
     display: block;
+    margin-bottom: 60px;
 `

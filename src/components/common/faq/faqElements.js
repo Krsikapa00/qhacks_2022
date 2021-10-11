@@ -15,6 +15,7 @@ export const FAQHeader = styled.h1`
     font-family: Encode Sans ebold; 
     color: #00205B;
     justify-content: center;
+    margin-bottom:50px;
     
 `
 export const FAQQuestion = styled.div`

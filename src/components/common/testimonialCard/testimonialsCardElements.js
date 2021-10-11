@@ -33,6 +33,7 @@ export const TestimonialHeader = styled.h1`
     color: #00205B;
     text-align: center;
     justify-content: center;
+    margin-bottom: 35px;
 `
 
 export const TestimonialTopGroup = styled.div `

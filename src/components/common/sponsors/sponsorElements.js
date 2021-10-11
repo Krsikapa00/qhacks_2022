@@ -6,7 +6,7 @@ export const SponsorHeader = styled.h1`
     color: #00205B;
     text-align: center;
     justify-content: center;
-    margin-bottom: 5rem;
+    margin-bottom: 50px;
 `
 
 export const SponsorLink = styled.a`
@@ -66,7 +66,7 @@ export const SponsorGrid = styled.div`
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    border: 3px solid #00205B;
+    /* border: 3px solid #00205B; */
     color: #00205B;
     border-radius: 15px;
     text-align: center;
@@ -78,4 +78,5 @@ export const SponsorContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 100px;
 `

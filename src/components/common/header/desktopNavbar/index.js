@@ -10,9 +10,9 @@ const Navbar = ({toggle}) => {
                     <img src={logo} alt='LOGO' />
                 </MobileLogoBtn>
                 <NavLinkMenu>
-                {/*<NavLink to="/" exact={true} >
+                    <NavLink to="/" exact={true} >
                         Home
-                    </NavLink> */}
+                    </NavLink> 
                     <NavLink to="/schedule" >
                         Schedule
                     </NavLink> 
@@ -21,9 +21,7 @@ const Navbar = ({toggle}) => {
                         Speakers
                     </NavLink>
                     
-                    <NavLink to="/testimonials" >
-                        Testimonials
-                    </NavLink>
+                    
                 </NavLinkMenu>
                 <NavLinkLogo to="/">
                     <img src={logo} alt='LOGO'/>
@@ -32,9 +30,12 @@ const Navbar = ({toggle}) => {
                 <NavLink to="/sponsors" >
                         Sponsors
                     </NavLink>
-                    <NavLink to="/our-team" >
-                        Our Team
+                    <NavLink to="/testimonials" >
+                        Testimonials
                     </NavLink>
+                    {/* <NavLink to="/our-team" >
+                        Our Team
+                    </NavLink> */}
                     {/* <NavLink to="/archive" >
                         Archive
                     </NavLink> */}

@@ -1,6 +1,7 @@
 import React from 'react'
 import StepperFrame from '../components/common/stepper/StepperFrame'
 import StepperCardGeneral from '../components/common/stepper/StepperCardGeneral'
+import "../components/common/stepper/Stepper.css"
 
 
 import AhelyS from '../assets/images/speakers/headshots/AhelyS.jpg'
@@ -145,7 +146,7 @@ const MentorsandLeaders = [
 
 const Speaker = () => {
     return (
-        <div>
+        <div className="PageContainer">
             <h1 className="PageHeader" >Our Past Speakers</h1>
 
             <StepperFrame cards={WomeninSTEM} stepperTitle="Women in STEM" />

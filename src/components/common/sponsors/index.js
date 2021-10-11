@@ -75,7 +75,7 @@ const SponsorsList = () => {
                 width: "100%",
                 borderRadius: "15px",
                 background: "#c81c2e",
-                // border: "1px solid #c81c2e",
+                border: "1px solid #c81c2e",
                 textAlign: "center",
                 padding: "10px 0"
             }}
@@ -89,7 +89,7 @@ const SponsorsList = () => {
             >Mega Sponsors</h2>
          </div>
         <SponsorGrid style={{
-                borderColor: "#c81c2e"
+                // borderColor: "#c81c2e"
         }}>
             <SponsorLink href="https://balsamiq.com/" target="_blank" rel="noreferrer">
                 <SponsorMegaLogo src={balsamiq} alt="balsamiq" />
