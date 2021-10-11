@@ -26,7 +26,7 @@ function App() {
             {/* <Route path="/archive" exact component={Archive}/> */}
             <Route path="/our-team" exact component={OurTeam}/>
             <Route path="/contact-us" exact component={ContactUs}/>
-            <Route path="/faq" exact component={Faq}/>
+            {/* <Route path="/faq" exact component={Faq}/> */}
           </div>
         </Switch>
         <Footer />
