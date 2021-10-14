@@ -9,6 +9,7 @@ import graphicMobile from "../../assets/images/backgrounds/backgroundMobile.png"
 import logo from "../../assets/images/logo/qhacksCrown-colored.svg";
 import word from "../../assets/images/logo/qhacksWordmark-colored.svg";
 import graphic from "../../assets/images/backgrounds/puzzlePieces.png";
+import wave from "../../assets/images/backgrounds/DottedLineGraphicred.png";
 import MailChimpForm from "./mailChimpForm";
 
 
@@ -111,6 +112,10 @@ useEffect(()=>{
             <div className="formContainer">
             <MailChimpForm></MailChimpForm>
             </div>
+          </div>
+
+          <div className = "frame">
+            
           </div>
       </ContentWrapper>
     </section>
