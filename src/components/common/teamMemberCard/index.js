@@ -6,7 +6,7 @@ const TeamMemberCard = (props) => {
  
 
     return (
-        <Container >
+        <Container style={props.special} >
             <Headshot src={props.pic} alt={props.name} />
             <TextGroup>
                 <MemberName>{props.name}</MemberName>

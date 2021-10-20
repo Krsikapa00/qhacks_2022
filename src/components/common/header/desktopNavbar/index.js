@@ -1,6 +1,7 @@
 import React from 'react'
-import { NavLink, Nav, NavLinkMenu, NavLinkLogo, MobileLogoBtn } from './navbarElements';
+import { NavLink, Nav, NavLinkMenu, NavLinkLogo, MobileLogoBtn, NavMLHLink } from './navbarElements';
 import logo from '../../../../assets/images/logo/qhacksCrown-black.svg';
+import mlhlogo from '../../../../assets/images/logo/mlh-trust-badge-2021-gray.svg';
 
 const Navbar = ({toggle}) => {
     return (
@@ -10,9 +11,9 @@ const Navbar = ({toggle}) => {
                     <img src={logo} alt='LOGO' />
                 </MobileLogoBtn>
                 <NavLinkMenu>
-                <NavLink to="/" exact={true} >
-                        Home
-                    </NavLink> 
+                    <NavMLHLink href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=gray" target="_blank">
+                        <img src={mlhlogo} alt='LOGO'/>
+                    </NavMLHLink>
                     <NavLink to="/schedule" >
                         Schedule
                     </NavLink> 
@@ -35,9 +36,7 @@ const Navbar = ({toggle}) => {
                     <NavLink to="/our-team" >
                         Our Team
                     </NavLink>
-                    {/* <NavLink to="/archive" >
-                        Archive
-                    </NavLink> */}
+          
                     <NavLink to="/faq" activeStyle>
                         FAQ
                     </NavLink>

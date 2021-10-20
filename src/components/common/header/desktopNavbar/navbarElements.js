@@ -35,6 +35,20 @@ export const NavLinkLogo = styled(Link)`
         display: none;
     }
 `
+export const NavMLHLink = styled.a`
+    /* color: #000; */
+    width:75px;
+    display: flex;
+    align-items: flex-start;
+    text-decoration: none;
+    /* margin-top: 20px; */
+    /* height: 100%; */
+    cursor: pointer;
+    
+    @media screen and (max-width: 850px) {
+        display: none;
+    }
+`
 export const MobileLogoBtn = styled.button`
     display: none;
     background: none;
@@ -63,7 +77,7 @@ export const NavLinkMenu = styled.div`
     font-family: "Encode Sans sbold";
     background-color: #fff;
     font-variant: small-caps;
-    align-items: center;
+    align-items: flex-start;
     padding: 0 1.5rem;
     font-size: 14px;
     color: white;

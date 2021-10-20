@@ -133,7 +133,7 @@ div.formContainer p {
 
 @media screen and (max-width: 450px) {
     .landingCSS {
-        height: 650px;
+        height: 600px;
         margin-top: 0px;
         background: none;
     }
@@ -162,7 +162,7 @@ div.formContainer p {
 
 @media screen and (max-width: 820px) {
     .landingCSS {
-        height: 750px;
+        height: 550px;
         margin-top: 0px;
     }
     .mobileBG{

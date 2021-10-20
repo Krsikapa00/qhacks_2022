@@ -75,4 +75,5 @@ export const OsContainer = styled.div`
 `
 export const OsBucket = styled.div`
     display: block;
+    margin-bottom: 120px;
 `

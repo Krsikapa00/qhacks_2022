@@ -40,13 +40,13 @@ const SponsorsList = () => {
                 padding: "10px 0"
             }}
             >
-            <h2  
+            <h3  
             
             style={{
                 color: "#fff",
                 textAlign: "center"
             }}
-            >Giga Sponsors</h2>
+            >Giga Sponsors</h3>
          </div>
         <SponsorGrid>
             <SponsorLink href="https://jobs.rogers.com/" target="_blank" rel="noreferrer">
@@ -80,13 +80,13 @@ const SponsorsList = () => {
                 padding: "10px 0"
             }}
             >
-            <h2  
+            <h3  
             
             style={{
                 color: "#fff",
                 textAlign: "center"
             }}
-            >Mega Sponsors</h2>
+            >Mega Sponsors</h3>
          </div>
         <SponsorGrid style={{
                 borderColor: "#c81c2e"

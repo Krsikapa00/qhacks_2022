@@ -94,6 +94,5 @@ export const TestimonialName = styled.h3 `
 
 `
 export const TestimonialProject = styled.h2 `
-
     font-family: Encode Sans reg; 
 `
