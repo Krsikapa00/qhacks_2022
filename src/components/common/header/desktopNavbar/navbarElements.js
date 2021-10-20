@@ -27,10 +27,17 @@ export const NavLinkLogo = styled(Link)`
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0 2.5rem;
+    padding: 0 5rem;
     height: 100%;
     cursor: pointer;
-    
+
+
+    @media screen and (max-width: 1200px) {
+        padding: 0 3rem;
+    }
+    @media screen and (max-width: 1000px) {
+        padding: 0 1.5rem;
+    }
     @media screen and (max-width: 850px) {
         display: none;
     }

@@ -1,11 +1,16 @@
 
 .title {
   text-align: center;
-  padding-top: 50px;
+  /* padding-top: 50px; */
+  display: flex;
+  font-family: Encode Sans ebold; 
+  color: #00205B;
+  text-align: center;
+  justify-content: center;
 }
 
 .imageBox {
-  margin: 50px 3% 25%;
+  margin: 50px 3% 130px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 50px;

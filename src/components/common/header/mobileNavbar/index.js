@@ -17,18 +17,18 @@ const MobileNavbar = ({isOpen, toggle}) => {
                     <MobilenavLink to="/sponsors" activeStyle>
                         Sponsors
                     </MobilenavLink>
-                    <MobilenavLink to="/our-team" activeStyle>
+                    {/* <MobilenavLink to="/our-team" activeStyle>
                         Our Team
-                    </MobilenavLink>
+                    </MobilenavLink> */}
                     <MobilenavLink to="/testimonials" activeStyle>
                         Testimonials
                     </MobilenavLink>
-                    <MobilenavLink to="/archive" activeStyle>
+                    {/* <MobilenavLink to="/archive" activeStyle>
                         Archive
-                    </MobilenavLink>
-                    <MobilenavLink to="/faq" activeStyle>
+                    </MobilenavLink> */}
+                    {/* <MobilenavLink to="/faq" activeStyle>
                         FAQ
-                    </MobilenavLink>
+                    </MobilenavLink> */}
                     <MobilenavLink to="/contact-us" activeStyle>
                         Contact Us
                     </MobilenavLink>

@@ -1,8 +1,13 @@
 import React from 'react'
 import { ContactUsCard } from '../components/common'
+import FAQ from '../components/common/faq'
 const ContactUs = () => {
     return (
-            <ContactUsCard/>
+            <div>
+                <FAQ/>
+                <div style={{height: '50px'}}/>
+                <ContactUsCard/>
+            </div>
     )
 }
 
