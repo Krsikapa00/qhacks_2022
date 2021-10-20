@@ -17,7 +17,7 @@ function App() {
     <Router>
       <Header />
         <Switch>
-          <div className="sidePadding fullscreen">
+          <div className="fullscreen">
             <Route  path="/" exact component={Home}/>
             <Route path="/schedule" exact component={Schedule}/>
             <Route path="/speakers" exact component={Speakers}/>

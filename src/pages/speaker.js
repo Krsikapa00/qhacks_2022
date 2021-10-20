@@ -1,8 +1,9 @@
 import React from 'react'
+import '../App.css';
 
 const Speaker = () => {
     return (
-        <div>
+        <div className="sidePadding">
             <h1>Speakers</h1>
         </div>
     )

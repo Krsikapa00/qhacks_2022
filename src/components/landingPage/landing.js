@@ -2,7 +2,7 @@ import React, {useState, useRef, useEffect} from "react";
 //import ActionButton from "./ActionButton";
 import ContentWrapper from "./ContentWrapper";
 import "./landingPage.css";
-
+import '../../App.css';
 //import backgroundImage from "../../assets/images/backgrounds/landingBG2.png";
 import graphicMobile from "../../assets/images/backgrounds/backgroundMobile.png";
 //import waveLineRed from "../../assets/images/backgrounds/waveLineRed.png";
@@ -58,9 +58,9 @@ useEffect(()=>{
 
 
   return (
-    <section className="landingCSS">
+    <section className="landingCSS ">
       <ContentWrapper>
-        <div className="div1">
+        <div className="div1 sidePadding">
           <img src={graphic} className = "landingGraphic" alt="QHacks Graphic"/>
           <div className="div2">
             <div>
@@ -92,7 +92,7 @@ useEffect(()=>{
             Applications are now closed
           </ActionButton> */}
         </div>
-        <div className="div3">
+        <div className="div3 sidePadding">
           <div>
               <img src={word} className = "qhacksWord" alt="QHacks Wordmark"/>
               <img src={logo} className = "logo" alt="QHacks Wordmark"/>
@@ -114,10 +114,10 @@ useEffect(()=>{
             </div>
           </div>
 
-          <div className = "frame">
+        <div className = "frame" />
             
-          </div>
       </ContentWrapper>
+      
     </section>
   );
 }
