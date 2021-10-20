@@ -2,6 +2,7 @@ import React from 'react'
 import Videocomponent from '../videoComponent'
 import { OsDivider, OsGroup, OsText, OsTitle, OsContainer, OsImage , OsImageContainer, OsIconGroup, OsBucket } from './valuePropositionCardElements.js'
 import growNetimg from '../../../assets/images/valueProposition/sellingPointOne.jpg';
+import '../../../App.css';
 
 import showCasetoExperts from '../../../assets/images/valueProposition/sellingPointTwo.jpg';
 import applicationsIcon from '../../../assets/icons/applicationsIcon.svg';
@@ -18,7 +19,7 @@ const link = "https://www.youtube.com/embed/DDmkCcMQYBE?rel=0&amp;controls=0&amp
 
 const ValueProposition = () => {
     return (
-        <OsBucket>
+        <OsBucket className="sidePadding">
             <OsContainer>
                 <OsGroup>
                     <OsTitle>

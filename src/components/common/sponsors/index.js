@@ -1,4 +1,5 @@
 import React from 'react'
+import '../../../App.css'
 import Aquanow from '../../../assets/images/sponsors/Aquanow.png'
 import DDQIC from '../../../assets/images/sponsors/DDQIC.jpg'
 import DistributedComputeLabs from '../../../assets/images/sponsors/DistributedComputeLabs.png'
@@ -28,7 +29,7 @@ import PartnershipCard from '../partnershipCard'
 
 const SponsorsList = () => {
     return (
-        <SponsorContainer>
+        <SponsorContainer className="sidePadding">
         <SponsorHeader>Our Past Sponsors</SponsorHeader>
         <div
             style={{

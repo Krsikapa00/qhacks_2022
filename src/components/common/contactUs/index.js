@@ -1,4 +1,5 @@
 import React from 'react'
+import '../../../App.css';
 import { ContactUsColumns, ContactUsContainer, ContactUsHeader, ContactUsSCGroup, ContactUsSCLogo, ContactUsSCTitle, ContactUsImage, ContactUsSCContainer, ContactUsImageContainer } from './contactUsElements'
 import graphic from "../../../assets/graphics/ContactUsGraphic.png"
 import facebook from '../../../assets/icons/socialFacebookdark.svg'
@@ -17,7 +18,7 @@ const changeInEmailMe = () => {
 
 const ContactUsCard = () => {
     return (
-        <ContactUsContainer>
+        <ContactUsContainer className="sidePadding">
             <ContactUsHeader>Want to say hi or ask a question?</ContactUsHeader>
             <ContactUsColumns>
                 <ContactUsImageContainer>

@@ -1,4 +1,5 @@
 import React from 'react'
+import '../App.css';
 import { TestimonialCard } from '../components/common'
 import jordanCurnew from '../assets/images/testimonialHeadshots/Jordan_Curnew.jpg'
 import amyLu from '../assets/images/testimonialHeadshots/amyLu.png'
@@ -10,7 +11,7 @@ import { TestimonialHeader } from '../components/common/testimonialCard/testimon
 
 const Testimonials = () => {
     return (
-        <div 
+        <div  className="sidePadding"
             style={{
                 display: 'flex',
                 flexDirection: "column",
