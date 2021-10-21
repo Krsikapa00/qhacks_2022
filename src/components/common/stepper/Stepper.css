@@ -18,25 +18,30 @@
 #CardLogoPic {
   display: flex;
   width: auto;
-  max-height: 80px;
+  /* max-height: 80px; */
   max-width: 200px;
-  margin: 0.5rem 1rem;
+  /* margin: 0.5rem 1rem; */
 }
 
 #CardLogoContainer {
   display: flex;
   width: auto;
-  height: 100%;
+  height: 150px;
+  /* height: 100%; */
   justify-content: center;
   align-items: center;
 }
 
 #CardName {
   color:#00205B;
+  text-align: center;
+  font-size: 24px;
 }
 
 #CardPosition {
+  text-align: center;
   display: flex;
+  min-height: 50px;
   font-family: "Encode Sans reg";
 }
 
@@ -66,6 +71,7 @@
 #GeneralStepperCardFrame {
   font-family: "Encode Sans sbold";
   background-color: white;
+  transition: all .2s ease-in-out;  
   align-items: center;
   flex: 1;
   display: flex;
@@ -73,6 +79,9 @@
   flex-direction: column;
   margin: 10px 2rem;
 }
+
+
+#GeneralStepperCardFrame:hover { transform: scale(1.1); }
 
 .StepperArrow {
   position: relative;
@@ -104,7 +113,7 @@
   font-size: 24px;
   font-family: "Encode Sans bold";
   border-bottom: 2px solid #00205B;
-  margin: 0 2rem;
+  margin: 2rem 2rem;
 }
 
 .PageHeader {
@@ -120,10 +129,38 @@
 
 .PageContainer {
   margin-bottom: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Container {
   padding: 1.5rem 1rem;
   margin: 2rem 0;
+  max-width: 1100px;
   box-shadow: rgb(7 16 75 / 10%) 4px 7px 20px 2px;
+}
+
+@media screen and (max-width: 1200px) {
+  .Container{
+    max-width: 1000px;
+  }
+  #CardName {
+    color:#00205B;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+}
+
+@media screen and (max-width: 650px) {
+  #CardPosition{
+    min-height: 0px;
+  }
+  #CardName {
+    color:#00205B;
+    text-align: center;
+    font-size: 24px;
+  }
+  
 }

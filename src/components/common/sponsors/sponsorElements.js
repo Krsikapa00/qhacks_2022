@@ -29,23 +29,23 @@ export const SponsorKiloLogo = styled.img `
 export const SponsorMegaLogo = styled.img `
     width: 125px;
     
-    @media screen and (max-width: 980px) { 
+    /* @media screen and (max-width: 980px) { 
         width: 80px;
     }
     @media screen and (max-width: 460px) { 
         width: 50px;
         margin: 30px 0;
-    }
+    } */
 `
 export const SponsorGigaLogo = styled.img `
-    width: 300px;
+    width: 400px;
     
     @media screen and (max-width: 980px) { 
-        width: 250px;
+        width: 300px;
     }
     @media screen and (max-width: 460px) { 
-        width: 150px;
-        margin: 30px 0;
+        width: 300px;
+        margin: 10px 0;
     }
 `
 export const SponsorTeraLogo = styled.img `

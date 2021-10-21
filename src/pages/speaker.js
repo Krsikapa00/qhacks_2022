@@ -2,7 +2,7 @@ import React from 'react'
 import StepperFrame from '../components/common/stepper/StepperFrame'
 import StepperCardGeneral from '../components/common/stepper/StepperCardGeneral'
 import "../components/common/stepper/Stepper.css"
-
+import "../App.css";
 
 import AhelyS from '../assets/images/speakers/headshots/AhelyS.jpg'
 import AndreaCorey from '../assets/images/speakers/headshots/AndreaCorey.jpg'
@@ -85,59 +85,60 @@ import opencare from "../assets/images/speakers/logos/opencare.png";
 
 const WomeninSTEM = [
      [  //Women in STEMs
-        {picture: AndreaCorey,  name:"Andrea Corey", position:"Director of Engineering", company:freshbooks},
-        {picture: AniaHalliop,  name:"Ania Halliop", position:"Senior Engineering Manager", company:uber},
-        {picture: NastaranBisheban,  name:"Nastaran Bisheban", position:"Chief Technology Officer at KFC Canada", company:yum},
-        {picture: RavinaAnand,  name:"Ravina Anand", position:"Co-Founder & COO", company:flik},
-        {picture: SarahMuma,  name:"Sarah Muma", position:"Cloud Solution Architect", company:microsoft},
-        {picture: AhelyS,  name:"Ahley Shemontee", position:"Process Improvement Analyst", company:Rogers}
-    ]
+         {picture: AndreaCorey,  name:"Andrea Corey", position:"Director of Engineering", company:freshbooks, logoW:"170px", logoH:"110px", logoM:"-10px 0px" },
+         {picture: AniaHalliop,  name:"Ania Halliop", position:"Senior Engineering Manager", company:uber, logoW:"160px", logoH:"160px", logoM:"-10px 0px"},
+         {picture: SarahMuma,  name:"Sarah Muma", position:"Cloud Solution Architect", company:microsoft, logoW:"190px", logoH:"85px", logoM:"-10px 0px"},
+         {picture: AhelyS,  name:"Ahley Shemontee", position:"Process Improvement Analyst", company:Rogers, logoW:"200px", logoH:"80px", logoM:"-10px 0px"},
+         {picture: NastaranBisheban,  name:"Nastaran Bisheban", position:"Chief Technology Officer at KFC Canada", company:yum, logoW:"150px", logoH:"130px", logoM:"-10px 0px"},
+         {picture: RavinaAnand,  name:"Ravina Anand", position:"Co-Founder & COO", company:flik, logoW:"140px", logoH:"140px", logoM:"0px 0px"},
+     ]
 ];
 const DayinaLifeofaDeveloper = [
     [  //Women in STEMs
-       {picture: DevonThomson,  name:"Devon Thomson", position:"Senior Software Engineer", company:elastic},
-       {picture: PrimroseC,  name:"Primrose Chareka", position:"Software Engineer", company:google},
-       {picture: StefanSokic,  name:"Stefan Sokic", position:"Software Developer", company:opencare},
-       {picture: ZackHarley,  name:"Zackery Harley", position:"Software Development Engineer", company:kc10}
+       {picture: DevonThomson,  name:"Devon Thomson", position:"Senior Software Engineer", company:elastic, logoW:"180px", logoH:"100px", logoM:"-10px 0px"},
+       {picture: PrimroseC,  name:"Primrose Chareka", position:"Software Engineer", company:google, logoW:"170px", logoH:"100px", logoM:"-10px 0px"},
+       {picture: StefanSokic,  name:"Stefan Sokic", position:"Software Developer", company:opencare, logoW:"200px", logoH:"130px", logoM:"-10px 0px"},
+       {picture: ZackHarley,  name:"Zackery Harley", position:"Software Development Engineer", company:kc10, logoW:"140px", logoH:"140px", logoM:"-10px 0px"}
    ]
 ];
 
 const MentorsandLeaders = [
     [  //Women in STEMs
-       {picture: MargoBain,  name:"Margo Bain", position:"Senior Associate, Cybersecurity, Privacy, and Financial Crime", company:pwc},
-       {picture: ChelseaPham,  name:"Chelsea Pham", position:"Advisory Associate, Cybersecurity & Privacy", company:pwc},
-       {picture: ErinGallagher,  name:"Erin Gallagher", position:"Software Engineer", company:uber},
-       {picture: DavidHayes,  name:"David Hayes", position:"CEO & Founder", company:avo},
-       {picture: ChrisMaltais,  name:"Chris Maltais", position:"Software Engineer", company:shopify},
-       {picture: SaraVanTol,  name:"Sara Van Tol", position:"Cross Platform Solution Specialist", company:microsoft},
+       {picture: MargoBain,  name:"Margo Bain", position:"Senior Associate, Cybersecurity and Privacy", company:pwc, logoW:"170px", logoH:"90px", logoM:"-10px 0px"},
+       {picture: ErinGallagher,  name:"Erin Gallagher", position:"Software Engineer", company:uber, logoW:"160px", logoH:"160px", logoM:"-10px 0px"},
+       {picture: DavidHayes,  name:"David Hayes", position:"CEO & Founder", company:avo, logoW:"170px", logoH:"140px", logoM:"-10px 0px"},
+       {picture: ChrisMaltais,  name:"Chris Maltais", position:"Software Engineer", company:shopify, logoW:"180px", logoH:"90px", logoM:"-10px 0px"},
+       {picture: SaraVanTol,  name:"Sara Van Tol", position:"Cross Platform Solution Specialist", company:microsoft, logoW:"190px", logoH:"85px", logoM:"-10px 0px"},
+       {picture: ChelseaPham,  name:"Chelsea Pham", position:"Advisory Associate, Cybersecurity & Privacy", company:pwc, logoW:"170px", logoH:"90px", logoM:"-10px 0px"},
+
+      ],
+    [
+       {picture: SimonLiu,  name:"Simon Liu", position:"Software Engineer", company:coursera, logoW:"200px", logoH:"75px", logoM:"20px 0px 10px 0px"},
+       {picture: NishantBhasin,  name:"Nishant Bhasin", position:"Senior Software Engineer", company:mozilla, logoW:"200px", logoH:"85px", logoM:"-10px 0px"},
+       {picture: PhilipHan,  name:"Philip Han", position:"Senior Software Engineer", company:intuit, logoW:"200px", logoH:"90px", logoM:"-10px 0px"},
+       {picture: MehryarMaalem,  name:"Mehryar Maalem", position:"Senior Software Engineer", company:ibm, logoW:"200px", logoH:"80px", logoM:"0px 0px"},
+       {picture: CooperThomasClark,  name:"Cooper Thomas-Clark", position:"Software Development Engineer", company:amazon, logoW:"200px", logoH:"80px", logoM:"0px 0px"},
+       {picture: MatthewAn,  name:"Matthew An", position:"Full-Stack Software Engineer", company:knockri, logoW:"200px", logoH:"85px", logoM:"0px 0px 10px 0px"},
     ],
     [
-       {picture: SimonLiu,  name:"Simon Liu", position:"Software Engineer", company:coursera},
-       {picture: NishantBhasin,  name:"Nishant Bhasin", position:"Senior Software Engineer", company:mozilla},
-       {picture: PhilipHan,  name:"Philip Han", position:"Senior Software Engineer", company:intuit},
-       {picture: MehryarMaalem,  name:"Mehryar Maalem", position:"Senior Software Engineer", company:ibm},
-       {picture: ZacharyFreedman,  name:"Zachary Freedman", position:"Software Engineer", company:connected},
-       {picture: MatthewAn,  name:"Matthew An", position:"Full-Stack Software Engineer", company:knockri},
+       {picture: HarryLewis,  name:"Harry Lewis", position:"Software Engineer", company:himama, logoW:"200px", logoH:"85px", logoM:"20px 0px 0px"},
+       {picture: AnastasiyaTarnouskaya,  name:"Anastasiya Tarnouskaya", position:"Product Manager", company:microsoft, logoW:"200px", logoH:"80px", logoM:"0px 0px 20px 0px"},
+       {picture: ZacharyFreedman,  name:"Zachary Freedman", position:"Software Engineer", company:connected, logoW:"200px", logoH:"160px", logoM:""},
+       {picture: BiswarupGhosh,  name:"Biswarup Ghosh", position:"Senior Data Scientist", company:accenture, logoW:"200px", logoH:"140px", logoM:"0px 0px 15px 0px "},
+       {picture: EmilyTamfo,  name:"Emily Tamfo", position:"Product Manager", company:ontario, logoW:"210px", logoH:"110px", logoM:"0px 0px 35px 0px "},
+       {picture: TaliRemennik,  name:"Tali Remennik", position:"Management Consultant", company:accenture, logoW:"200px", logoH:"140px", logoM:"0px 0px 15px 0px "},
     ],
     [
-       {picture: GarretCree,  name:"Garret Cree", position:"Data Engineer", company:mars},
-       {picture: ArjunVegda,  name:"Arjun Vegda", position:"Senior Software Developer", company:pointcc},
-       {picture: AnastasiyaTarnouskaya,  name:"Anastasiya Tarnouskaya", position:"Product Manager", company:microsoft},
-       {picture: CooperThomasClark,  name:"Cooper Thomas-Clark", position:"Software Development Engineer", company:amazon},
-       {picture: EmilyTamfo,  name:"Emily Tamfo", position:"Product Manager", company:ontario},
-       {picture: TaliRemennik,  name:"Tali Remennik", position:"Management Consultant", company:accenture},
+       {picture: ArjunVegda,  name:"Arjun Vegda", position:"Senior Software Developer", company:pointcc, logoW:"200px", logoH:"130px", logoM:"0px 0px"},
+       {picture: GarretCree,  name:"Garret Cree", position:"Data Engineer", company:mars, logoW:"140px", logoH:"140px", logoM:"0px 0px"},
+       {picture: AndrewLiu,  name:"Andrew Liu", position:"Software Engineer", company:vs, logoW:"140px", logoH:"140px", logoM:"0px 0px"},
+       {picture: ManoochehrAkhlaghinia,  name:"Manoochehr Akhlaghinia", position:"Data Scientist/Engineer", company:accenture, logoW:"200px", logoH:"140px", logoM:"0px 0px 15px 0px "},
+       {picture: KerriLynn,  name:"Kerri-Lynn McAllister", position:"Tech Leader, Founder of Pawzy", company:pawzy, logoW:"200px", logoH:"140px", logoM:"25px 0px 0px 0px "},
+       {picture: DerekVogt,  name:"Derek Vogt", position:"Co-Founder & CTO", company:mosaic, logoW:"200px", logoH:"120px", logoM:"15px 0px 0px 0px "},
     ],
     [
-       {picture: BiswarupGhosh,  name:"Biswarup Ghosh", position:"Senior Data Scientist", company:accenture},
-       {picture: HarryLewis,  name:"Harry Lewis", position:"Software Engineer", company:himama},
-       {picture: AndrewLiu,  name:"Andrew Liu", position:"Software Engineer", company:vs},
-       {picture: ManoochehrAkhlaghinia,  name:"Manoochehr Akhlaghinia", position:"Data Scientist/Engineer", company:accenture},
-       {picture: KerriLynn,  name:"Kerri-Lynn McAllister", position:"Tech Leader, Founder of Pawzy", company:pawzy},
-       {picture: DerekVogt,  name:"Derek Vogt", position:"Co-Founder & CTO", company:mosaic},
-    ],
-    [
-       {picture: KevinZuern,  name:"Kevin Zuern", position:"Senior Software Engineer", company:uhn},
-       {picture: DanKim,  name:"Dan Kim", position:"Senior Software Engineer", company:bloomberg}
+       {picture: KevinZuern,  name:"Kevin Zuern", position:"Senior Software Engineer", company:uhn, logoW:"200px", logoH:"80px", logoM:"0px 0px 0px 0px "},
+       {picture: DanKim,  name:"Dan Kim", position:"Senior Software Engineer", company:bloomberg, logoW:"200px", logoH:"70px", logoM:"0px 0px 0px 0px "}
    ]
 ];
 
@@ -146,7 +147,7 @@ const MentorsandLeaders = [
 
 const Speaker = () => {
     return (
-        <div className="PageContainer">
+        <div className="PageContainer sidePadding">
             <h1 className="PageHeader" >Our Past Speakers</h1>
 
             <StepperFrame cards={WomeninSTEM} stepperTitle="Women in STEM" />

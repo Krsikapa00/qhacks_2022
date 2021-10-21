@@ -13,14 +13,14 @@ export default class StepperCardGeneral extends Component {
         return (
             <div id="GeneralStepperCardFrame">
                 <img id="StepperPicFrame" style={{borderColor: borderColour }}src={this.props.picture} alt="headshot" />
-                <h3 id="CardName">
+                <h4 id="CardName">
                     {this.props.name}
-                </h3>
+                </h4>
                 <h2 id="CardPosition">
                     {this.props.position}
                 </h2>
                 <div id="CardLogoContainer">
-                    <img id="CardLogoPic" src={this.props.company} />
+                    <img id="CardLogoPic" src={this.props.company}  style={{width:this.props.logoW, height:this.props.logoH, margin:this.props.logoM}}/>
                 </div>
             </div>
         )

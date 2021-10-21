@@ -35,7 +35,7 @@ export default class StepperFrame extends Component {
             {this.state.cards[this.state.pageNumber].map( 
                 (n, index) => (
                     
-                    <StepperCardGeneral border={index} picture={n.picture} name={n.name} position={n.position} company={n.company}/>
+                    <StepperCardGeneral border={index} picture={n.picture} name={n.name} position={n.position} company={n.company} logoW={n.logoW} logoH={n.logoH} logoM={n.logoM} />
                 )
             )}
             </div>

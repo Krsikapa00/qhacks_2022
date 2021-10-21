@@ -42,6 +42,26 @@ export const NavLinkLogo = styled(Link)`
         display: none;
     }
 `
+
+export const NavMLHLink = styled.a`
+    /* color: #000; */
+    width:75px;
+    display: flex;
+    align-items: flex-start;
+    text-decoration: none;
+    margin-top: 25px;
+    /* height: 100%; */
+    cursor: pointer;
+    
+    @media screen and (max-width: 1200px) {
+        margin-top: 40px;
+    }
+
+    @media screen and (max-width: 850px) {
+        display: none;
+    }
+`
+
 export const MobileLogoBtn = styled.button`
     display: none;
     background: none;
