@@ -39,6 +39,10 @@ export const SponsorMegaLogo = styled.img `
 `
 export const SponsorGigaLogo = styled.img `
     width: 400px;
+
+    hover { 
+        transform: scale(1.1); 
+    }
     
     @media screen and (max-width: 980px) { 
         width: 300px;

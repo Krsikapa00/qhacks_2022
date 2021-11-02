@@ -29,7 +29,7 @@ export const FooterSCLink = styled.a `
 `
 export const FooterPageLink = styled.a`
     color: #fff;
-    padding: 5px 0;
+    padding: 5px 2rem;
     display: flex;
     flex: 0 0 auto;
     justify-content: center;
@@ -44,6 +44,12 @@ export const FooterPageLink = styled.a`
         /* font-family: Encode Sans ebold;  */
         text-decoration: underline;
     }
+
+    @media screen and (max-width: 1050px) {
+        padding: 5px 0;
+
+    }
+
 `
 export const FooterLinkLogo = styled.div`
     color: #fff;

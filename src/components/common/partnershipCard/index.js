@@ -10,7 +10,7 @@ const PartnershipCard = () => {
 
             <PartnershipGroup>
                 <PartnershipHeader>Interested in Partnering?</PartnershipHeader>
-                <Partnershiptext>Contact Us at <a href="mailto:hello@qhacks.io" target="_blank" rel="noreferrer" style={{color: "#B43948"}}>partnerships@qhacks.io</a></Partnershiptext>
+                <Partnershiptext>Contact Us at <a href="mailto:hello@qhacks.io" target="_blank" rel="noreferrer" style={{color: "#B43948"}}>partnership@qhacks.io</a></Partnershiptext>
                 <PartnershipButton>Partnership Package</PartnershipButton>
             </PartnershipGroup>
         </PartnershipContainer>

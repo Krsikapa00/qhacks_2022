@@ -43,11 +43,7 @@ const FAQ = () => {
                 <FAQQuestion> How do I apply?</FAQQuestion>    
                 <FAQAnswer> Follow our social media and check back here to see when applications will be released! Remember, you don't need to be an expert hacker or to have been to a hackathon before - we just want to see what makes you creative and unique!</FAQAnswer>
             </FAQGroup>  
-            <FAQGroup>
-                <FAQQuestion> Have additional questions?</FAQQuestion>    
-                <FAQAnswer> Feel free to reach out to us at <a href="mailto:hello@qhacks.io">hello@qhacks.io</a> or on our <a href="https://linktr.ee/QHacks">social media</a> direct messages!</FAQAnswer>
-            </FAQGroup>    
-
+           
 
 
         </FAQContainer>

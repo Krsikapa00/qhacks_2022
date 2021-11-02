@@ -123,7 +123,7 @@ const SponsorsList = () => {
                 <SponsorMegaLogo src={sherpa} alt="sherpa" style={{width:"180px", height:"110px", padding:"0px"}}/>
             </SponsorLink>
             <SponsorLink href="https://www.toyota.ca/toyota/en/about/careers" target="_blank" rel="noreferrer" style={{width:"", height:"", padding:"0.5rem"}}>
-                <SponsorMegaLogo src={Toyota} alt="Toyota" style={{width:"180px", height:"100px", padding:"0px"}}/>
+                <SponsorMegaLogo src={Toyota} alt="Toyota" style={{width:"190px", height:"100px", padding:"0px"}}/>
             </SponsorLink>
             <SponsorLink href="https://kuzoclass.com/" target="_blank" rel="noreferrer" style={{width:"", height:"", padding:"0.5rem"}}>
                 <SponsorMegaLogo src={Kuzo} alt="Kuzo" style={{width:"180px", height:"250px", margin:"-60px 0px"}}/>
@@ -142,7 +142,7 @@ const SponsorsList = () => {
                 <SponsorMegaLogo src={mmie} alt="mmie" style={{width:"280px", height:"110px", padding:"0px"}}/>
             </SponsorLink>
             <SponsorLink href="https://www.voiceflow.com/" target="_blank" rel="noreferrer" style={{width:"", height:"", padding:"0.5rem"}}>
-                <SponsorMegaLogo src={Voiceflow} alt="Voiceflow" style={{width:"170px", height:"90px", padding:"0px"}}/>
+                <SponsorMegaLogo src={Voiceflow} alt="Voiceflow" style={{width:"190px", height:"90px", padding:"0px"}}/>
             </SponsorLink>
             <SponsorLink href="https://www.mosaicmfg.com/" target="_blank" rel="noreferrer" style={{width:"", height:"", padding:"0.5rem"}}>
                 <SponsorMegaLogo src={Mosiac} alt="Mosiac" style={{width:"180px", height:"120px", margin:"-15px 0px"}}/>

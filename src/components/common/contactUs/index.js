@@ -19,7 +19,7 @@ const changeInEmailMe = () => {
 const ContactUsCard = () => {
     return (
         <ContactUsContainer className="sidePadding">
-            <ContactUsHeader>Want to say hi or ask a question?</ContactUsHeader>
+            <ContactUsHeader>Have any other questions? Send us a message!</ContactUsHeader>
             <ContactUsColumns>
                 <ContactUsImageContainer>
                     <ContactUsImage src={graphic}/>
