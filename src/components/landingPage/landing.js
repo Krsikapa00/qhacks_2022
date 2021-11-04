@@ -68,7 +68,7 @@ useEffect(()=>{
               <img src={logo} className = "logo" alt="QHacks Wordmark"/>
             </div>
             <h2 data-cy="qhacks-information" className = "information">
-              Queen’s University • January 22nd - 24th, 2021
+              Queen’s University • January 28th - 30th, 2022
             </h2>
             <h2 data-cy="qhacks-tagline" className = "tagline">
               Queen’s University’s annual hackathon.
@@ -98,10 +98,10 @@ useEffect(()=>{
               <img src={logo} className = "logo" alt="QHacks Wordmark"/>
             </div>
             <h2 data-cy="qhacks-information" className = "information">
-              Queen’s University • January 22nd - 24th, 2021
+            Queen’s University • January 28th - 30th, 2022
             </h2>
             <h2 data-cy="qhacks-information" className = "information2">
-              Queen’s University <br/> January 22nd - 24th, 2021
+              Queen’s University <br/> January 28th - 30th, 2022
             </h2>
             <h2 data-cy="qhacks-tagline" className = "tagline">
               Queen’s University’s annual hackathon.
@@ -112,9 +112,13 @@ useEffect(()=>{
             <div className="formContainer">
             <MailChimpForm></MailChimpForm>
             </div>
-          </div>
+      </div>
 
-        <div className = "frame" />
+        <div className = "frame">
+          <h1 className="interconnected" >
+            Interconnected
+          </h1>
+        </div>
             
       </ContentWrapper>
       

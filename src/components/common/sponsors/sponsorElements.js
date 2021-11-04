@@ -11,7 +11,7 @@ export const SponsorHeader = styled.h1`
 
 export const SponsorLink = styled.a`
     display: flex;
-    padding: 1rem 1rem;
+    padding: 1rem 3rem;
 `
 
 export const SponsorKiloLogo = styled.img `

@@ -11,9 +11,12 @@ const Navbar = ({toggle}) => {
                     <img src={logo} alt='LOGO' />
                 </MobileLogoBtn>
                 <NavLinkMenu>
-                    <NavMLHLink href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=gray" target="_blank">
+                    {/* <NavMLHLink href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=gray" target="_blank">
                         <img src={mlhlogo} alt='LOGO'/>
-                    </NavMLHLink>
+                    </NavMLHLink> */}
+                    <NavLink exact={true} to="/" >
+                        Home
+                    </NavLink> 
                     <NavLink to="/schedule" >
                         Schedule
                     </NavLink> 

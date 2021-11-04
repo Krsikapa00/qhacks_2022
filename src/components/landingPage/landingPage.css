@@ -1,7 +1,7 @@
 .landingCSS {
     width: 100%;
-    height: 700px;
-    margin-top: 30px;
+    height: calc(100vh - 90px);
+    /* margin-top: 30px; */
     background-color: #fff;
     background-size: auto 650px;
 }
@@ -15,15 +15,21 @@
     text-align: center;
 }
 
+.interconnected {
+    font-size:60px;
+    color: white;
+}
+
 .frame {
     /* margin-top: 5%; */
     width: 100%;
-    height: 35%;
+    height: 30%;
     /* padding: 2rem 1rem; */
-    background-size: 100%;
-    background-repeat: no-repeat;
-
-    background-image: url("../../assets/images/backgrounds/DottedLineGraphicred.png");
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/images/backgrounds/CircuitBoardGraphicFilledred.png");
     /* background-image: -webkit-linear-gradient(left, 
         rgba(255, 255, 255, 0.9) 0%, 
         rgba(255, 255, 255, 0) 20%,
@@ -31,13 +37,13 @@
         rgba(255, 255, 255, 0.9) 100%
     ),
     url("../../assets/images/backgrounds/DottedLineGraphicred.png"); */
-    background-image: -webkit-linear-gradient(top, 
+    /* background-image: -webkit-linear-gradient(top,  */
         /* rgba(255, 255, 255, 0.9) 0%,  */
-        rgba(255, 255, 255, 0) 40%,
-        rgba(255, 255, 255, 0) 60%,
-        rgba(255, 255, 255, 1) 100%
-    ),
-    url("../../assets/images/backgrounds/DottedLineGraphicred.png");
+        /* rgba(255, 255, 255, 0) 40%, */
+        /* rgba(255, 255, 255, 0) 60%, */
+        /* rgba(255, 255, 255, 1) 100% */
+    /* ), */
+    /* url("../../assets/images/backgrounds/DottedLineGraphicred.png"); */
 }
 
 div.formContainer button {
@@ -82,10 +88,14 @@ div.formContainer p {
 }
 
 .div1 {
+    height: 60%;
     display: flex;
     text-align: left;
     padding-right: auto;
     padding-top: 50px;
+    padding-bottom: 20px;
+    margin-bottom: 5%;
+
 }
 
 .div2 {
