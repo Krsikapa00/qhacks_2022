@@ -40,6 +40,9 @@ const Footer = () => {
                     <FooterPageLink href="https://medium.com/@qhacks" target="_blank" rel="noreferrer">
                             QHacks Blog
                     </FooterPageLink>
+                    <FooterPageLink href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank" rel="noreferrer">
+                            Hack Day tips
+                    </FooterPageLink>
                     <FooterPageLink href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank" rel="noreferrer">
                             MLH Code of Conduct
                     </FooterPageLink>
